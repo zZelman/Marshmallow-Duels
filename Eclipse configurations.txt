@@ -1,0 +1,26 @@
+c++ Compiler
+	Preprocessor
+		DEBUG
+	Includes
+		"${workspace_loc:/${ProjName}/SFML-2.1/include}"
+		"${workspace_loc:/${ProjName}/rapidxml-1.13/}"
+	Warnings
+		All warnings
+C Compiler
+	Symbols
+		DEBUG
+	Includes
+		"${workspace_loc:/${ProjName}/SFML-2.1/include}"
+		"${workspace_loc:/${ProjName}/rapidxml-1.13/}"
+	Warnings
+		All warnings
+C++ Linker
+	Libraries
+		-l
+			sfml-graphics-d
+			sfml-window-d
+			sfml-system-d
+		-L
+			"${workspace_loc:/${ProjName}/SFML-2.1/lib}"
+	Miscellaneous
+		-rpath "${workspace_loc:/${ProjName}/SFML-2.1/lib}"

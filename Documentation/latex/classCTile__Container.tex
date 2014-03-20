@@ -1,0 +1,227 @@
+\hypertarget{classCTile__Container}{\section{C\-Tile\-\_\-\-Container Class Reference}
+\label{classCTile__Container}\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}}
+}
+
+
+T\-O\-D\-O\-: This object needs to be re-\/writen to expand functionality.  
+
+
+
+
+{\ttfamily \#include $<$C\-Tile\-\_\-\-Container.\-h$>$}
+
+
+
+Inheritance diagram for C\-Tile\-\_\-\-Container\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCTile__Container__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Tile\-\_\-\-Container\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCTile__Container__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCTile__Container_ab3f79e82961b644d422874eb558ea312}{C\-Tile\-\_\-\-Container} (std\-::string file\-Name)
+\item 
+\hyperlink{classCTile__Container_ac62ffead3e87a0c405d7bd6f25581927}{$\sim$\-C\-Tile\-\_\-\-Container} ()
+\item 
+sf\-::\-Vector2$<$ int $>$ \hyperlink{classCTile__Container_ae8a4d2b6e49fbec47d92cbb19bb9d3c7}{get\-Grid\-Size} ()
+\item 
+sf\-::\-Vector2$<$ int $>$ \hyperlink{classCTile__Container_a876984278369d0cafc24890959128ed0}{get\-Grid\-Sub\-Size} ()
+\item 
+void \hyperlink{classCTile__Container_abe6e19de544f042671094697bb83fde9}{update} ()
+\item 
+void \hyperlink{classCTile__Container_ae61b573ed7b47bea750040a26b492632}{get\-Collisiondata} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)
+\begin{DoxyCompactList}\small\item\em All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. \end{DoxyCompactList}\item 
+void \hyperlink{classCTile__Container_a48c74611efadee522595362a79620bff}{get\-Render\-Data} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)
+\begin{DoxyCompactList}\small\item\em Fills the std\-::list with objects that need to be rendered. \end{DoxyCompactList}\item 
+void \hyperlink{classCTile__Container_a14f90644c3a992813a629cea3e81aa38}{screen\-To\-Grid} (int $\ast$pos\-X, int $\ast$pos\-Y)
+\item 
+bool \hyperlink{classCTile__Container_adfda15836508531632c4ca506caf6360}{is\-Collision} (const sf\-::\-Rect$<$ float $>$ \&rect, \hyperlink{classCSprite}{C\-Sprite} $\ast$\&p\-Sprite)
+\item 
+bool \hyperlink{classCTile__Container_a4195d75fcc4790946b19ea82fc693a1c}{is\-Collision} (const sf\-::\-Vector2$<$ float $>$ \&point, \hyperlink{classCSprite}{C\-Sprite} $\ast$\&p\-Sprite)
+\item 
+bool \hyperlink{classCTile__Container_a3c8b4ccbb9afaaa9462a11962b6e2dbd}{is\-Collision} (float x, float y, \hyperlink{classCSprite}{C\-Sprite} $\ast$\&p\-Sprite)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\-O\-D\-O\-: This object needs to be re-\/writen to expand functionality. 
+
+Custom Container for holding individual \hyperlink{classCTile}{C\-Tile}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classCTile}{C\-Tile} 
+\end{DoxySeeAlso}
+
+
+Definition at line 30 of file C\-Tile\-\_\-\-Container.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCTile__Container_ab3f79e82961b644d422874eb558ea312}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}}
+\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{C\-Tile\-\_\-\-Container}]{\setlength{\rightskip}{0pt plus 5cm}C\-Tile\-\_\-\-Container\-::\-C\-Tile\-\_\-\-Container (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_ab3f79e82961b644d422874eb558ea312}
+
+
+Definition at line 19 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_ac62ffead3e87a0c405d7bd6f25581927}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!$\sim$\-C\-Tile\-\_\-\-Container@{$\sim$\-C\-Tile\-\_\-\-Container}}
+\index{$\sim$\-C\-Tile\-\_\-\-Container@{$\sim$\-C\-Tile\-\_\-\-Container}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{$\sim$\-C\-Tile\-\_\-\-Container}]{\setlength{\rightskip}{0pt plus 5cm}C\-Tile\-\_\-\-Container\-::$\sim$\-C\-Tile\-\_\-\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_ac62ffead3e87a0c405d7bd6f25581927}
+
+
+Definition at line 32 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCTile__Container_ae61b573ed7b47bea750040a26b492632}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!get\-Collisiondata@{get\-Collisiondata}}
+\index{get\-Collisiondata@{get\-Collisiondata}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{get\-Collisiondata}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Tile\-\_\-\-Container\-::get\-Collisiondata (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf A\-Renderable} $\ast$ $>$ $\ast$}]{p\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCTile__Container_ae61b573ed7b47bea750040a26b492632}
+
+
+All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. 
+
+
+
+Implements \hyperlink{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}{I\-Get\-Collision\-Data}.
+
+
+
+Definition at line 75 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_ae8a4d2b6e49fbec47d92cbb19bb9d3c7}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!get\-Grid\-Size@{get\-Grid\-Size}}
+\index{get\-Grid\-Size@{get\-Grid\-Size}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{get\-Grid\-Size}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2$<$ int $>$ C\-Tile\-\_\-\-Container\-::get\-Grid\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_ae8a4d2b6e49fbec47d92cbb19bb9d3c7}
+
+
+Definition at line 47 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_a876984278369d0cafc24890959128ed0}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!get\-Grid\-Sub\-Size@{get\-Grid\-Sub\-Size}}
+\index{get\-Grid\-Sub\-Size@{get\-Grid\-Sub\-Size}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{get\-Grid\-Sub\-Size}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Vector2$<$ int $>$ C\-Tile\-\_\-\-Container\-::get\-Grid\-Sub\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_a876984278369d0cafc24890959128ed0}
+
+
+Definition at line 53 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_a48c74611efadee522595362a79620bff}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!get\-Render\-Data@{get\-Render\-Data}}
+\index{get\-Render\-Data@{get\-Render\-Data}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{get\-Render\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Tile\-\_\-\-Container\-::get\-Render\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf A\-Renderable} $\ast$ $>$ $\ast$}]{p\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCTile__Container_a48c74611efadee522595362a79620bff}
+
+
+Fills the std\-::list with objects that need to be rendered. 
+
+
+
+Implements \hyperlink{classIGetRenderData_ac98527f07b6d1b5030786b4848cca867}{I\-Get\-Render\-Data}.
+
+
+
+Definition at line 64 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_adfda15836508531632c4ca506caf6360}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!is\-Collision@{is\-Collision}}
+\index{is\-Collision@{is\-Collision}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{is\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Tile\-\_\-\-Container\-::is\-Collision (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Rect$<$ float $>$ \&}]{rect, }
+\item[{{\bf C\-Sprite} $\ast$\&}]{p\-Sprite}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_adfda15836508531632c4ca506caf6360}
+
+
+Definition at line 102 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_a4195d75fcc4790946b19ea82fc693a1c}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!is\-Collision@{is\-Collision}}
+\index{is\-Collision@{is\-Collision}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{is\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Tile\-\_\-\-Container\-::is\-Collision (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2$<$ float $>$ \&}]{point, }
+\item[{{\bf C\-Sprite} $\ast$\&}]{p\-Sprite}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_a4195d75fcc4790946b19ea82fc693a1c}
+
+
+Definition at line 124 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_a3c8b4ccbb9afaaa9462a11962b6e2dbd}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!is\-Collision@{is\-Collision}}
+\index{is\-Collision@{is\-Collision}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{is\-Collision}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Tile\-\_\-\-Container\-::is\-Collision (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{{\bf C\-Sprite} $\ast$\&}]{p\-Sprite}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_a3c8b4ccbb9afaaa9462a11962b6e2dbd}
+
+
+Definition at line 130 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_a14f90644c3a992813a629cea3e81aa38}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!screen\-To\-Grid@{screen\-To\-Grid}}
+\index{screen\-To\-Grid@{screen\-To\-Grid}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{screen\-To\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Tile\-\_\-\-Container\-::screen\-To\-Grid (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{pos\-X, }
+\item[{int $\ast$}]{pos\-Y}
+\end{DoxyParamCaption}
+)}}\label{classCTile__Container_a14f90644c3a992813a629cea3e81aa38}
+
+
+Definition at line 86 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCTile__Container_abe6e19de544f042671094697bb83fde9}{\index{C\-Tile\-\_\-\-Container@{C\-Tile\-\_\-\-Container}!update@{update}}
+\index{update@{update}!CTile_Container@{C\-Tile\-\_\-\-Container}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Tile\-\_\-\-Container\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCTile__Container_abe6e19de544f042671094697bb83fde9}
+
+
+Implements \hyperlink{classIUpdateable_a46d178a1ecdab33bcaad25d9b38582a5}{I\-Updateable}.
+
+
+
+Definition at line 59 of file C\-Tile\-\_\-\-Container.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CTile__Container_8h}{C\-Tile\-\_\-\-Container.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Tiles/\hyperlink{CTile__Container_8cpp}{C\-Tile\-\_\-\-Container.\-cpp}\end{DoxyCompactItemize}

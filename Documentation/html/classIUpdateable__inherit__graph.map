@@ -1,0 +1,8 @@
+<map id="IUpdateable" name="IUpdateable">
+<area shape="rect" id="node2" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="115,219,244,325"/>
+<area shape="rect" id="node5" href="$classCPhysicsEngine.html" title="Module of the game engine that is responsible for: resolving collisions and updating physics data wit..." alt="" coords="269,219,416,325"/>
+<area shape="rect" id="node6" href="$classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="440,160,584,384"/>
+<area shape="rect" id="node7" href="$classCUI.html" title="&#39;Parses&#39; user events, as well as keeps Bookkeeping information on several user states. " alt="" coords="609,189,799,355"/>
+<area shape="rect" id="node3" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,433,195,613"/>
+<area shape="rect" id="node4" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="219,462,300,583"/>
+</map>

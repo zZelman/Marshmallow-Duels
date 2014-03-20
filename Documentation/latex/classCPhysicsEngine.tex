@@ -1,0 +1,100 @@
+\hypertarget{classCPhysicsEngine}{\section{C\-Physics\-Engine Class Reference}
+\label{classCPhysicsEngine}\index{C\-Physics\-Engine@{C\-Physics\-Engine}}
+}
+
+
+Module of the game engine that is responsible for\-: resolving collisions and updating physics data within objects.  
+
+
+
+
+{\ttfamily \#include $<$C\-Physics\-Engine.\-h$>$}
+
+
+
+Inheritance diagram for C\-Physics\-Engine\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classCPhysicsEngine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Physics\-Engine\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classCPhysicsEngine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCPhysicsEngine_ab7a2fa6ebd7e1ad0da2ab36d92ae8608}{C\-Physics\-Engine} (\hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player, \hyperlink{classCTile__Container}{C\-Tile\-\_\-\-Container} $\ast$p\-Tile\-\_\-\-Container)
+\item 
+\hyperlink{classCPhysicsEngine_a2e432f93b60e9e38a8882223ea3ee71b}{$\sim$\-C\-Physics\-Engine} ()
+\item 
+void \hyperlink{classCPhysicsEngine_abc493897bbdb15e6787a25478730f1f5}{update} ()
+\begin{DoxyCompactList}\small\item\em Only updates the velocities within the objects, and calls \char`\"{}step\-Normally()\char`\"{} if it can step normally within the next update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Module of the game engine that is responsible for\-: resolving collisions and updating physics data within objects. 
+
+Definition at line 21 of file C\-Physics\-Engine.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCPhysicsEngine_ab7a2fa6ebd7e1ad0da2ab36d92ae8608}{\index{C\-Physics\-Engine@{C\-Physics\-Engine}!C\-Physics\-Engine@{C\-Physics\-Engine}}
+\index{C\-Physics\-Engine@{C\-Physics\-Engine}!CPhysicsEngine@{C\-Physics\-Engine}}
+\subsubsection[{C\-Physics\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}C\-Physics\-Engine\-::\-C\-Physics\-Engine (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Player} $\ast$}]{p\-Player, }
+\item[{{\bf C\-Tile\-\_\-\-Container} $\ast$}]{p\-Tile\-\_\-\-Container}
+\end{DoxyParamCaption}
+)}}\label{classCPhysicsEngine_ab7a2fa6ebd7e1ad0da2ab36d92ae8608}
+
+
+Definition at line 11 of file C\-Physics\-Engine.\-cpp.
+
+\hypertarget{classCPhysicsEngine_a2e432f93b60e9e38a8882223ea3ee71b}{\index{C\-Physics\-Engine@{C\-Physics\-Engine}!$\sim$\-C\-Physics\-Engine@{$\sim$\-C\-Physics\-Engine}}
+\index{$\sim$\-C\-Physics\-Engine@{$\sim$\-C\-Physics\-Engine}!CPhysicsEngine@{C\-Physics\-Engine}}
+\subsubsection[{$\sim$\-C\-Physics\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}C\-Physics\-Engine\-::$\sim$\-C\-Physics\-Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCPhysicsEngine_a2e432f93b60e9e38a8882223ea3ee71b}
+
+
+Definition at line 21 of file C\-Physics\-Engine.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCPhysicsEngine_abc493897bbdb15e6787a25478730f1f5}{\index{C\-Physics\-Engine@{C\-Physics\-Engine}!update@{update}}
+\index{update@{update}!CPhysicsEngine@{C\-Physics\-Engine}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Physics\-Engine\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPhysicsEngine_abc493897bbdb15e6787a25478730f1f5}
+
+
+Only updates the velocities within the objects, and calls \char`\"{}step\-Normally()\char`\"{} if it can step normally within the next update. 
+
+Does not call the object's \char`\"{}update()\char`\"{} function!! 
+
+Implements \hyperlink{classIUpdateable_a46d178a1ecdab33bcaad25d9b38582a5}{I\-Updateable}.
+
+
+
+Definition at line 26 of file C\-Physics\-Engine.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CPhysicsEngine_8h}{C\-Physics\-Engine.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Physics/\hyperlink{CPhysicsEngine_8cpp}{C\-Physics\-Engine.\-cpp}\end{DoxyCompactItemize}

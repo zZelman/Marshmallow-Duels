@@ -1,0 +1,82 @@
+\hypertarget{classIGetCollisionData}{\section{I\-Get\-Collision\-Data Class Reference}
+\label{classIGetCollisionData}\index{I\-Get\-Collision\-Data@{I\-Get\-Collision\-Data}}
+}
+
+
+A common interface from pulling relevant collision data from objects.  
+
+
+
+
+{\ttfamily \#include $<$I\-Get\-Collision\-Data.\-h$>$}
+
+
+
+Inheritance diagram for I\-Get\-Collision\-Data\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classIGetCollisionData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\-Get\-Collision\-Data\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classIGetCollisionData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classIGetCollisionData_a15a428835a190d306862a213bfbb063b}{$\sim$\-I\-Get\-Collision\-Data} ()
+\item 
+virtual void \hyperlink{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}{get\-Collisiondata} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)=0
+\begin{DoxyCompactList}\small\item\em All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A common interface from pulling relevant collision data from objects. 
+
+Definition at line 17 of file I\-Get\-Collision\-Data.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIGetCollisionData_a15a428835a190d306862a213bfbb063b}{\index{I\-Get\-Collision\-Data@{I\-Get\-Collision\-Data}!$\sim$\-I\-Get\-Collision\-Data@{$\sim$\-I\-Get\-Collision\-Data}}
+\index{$\sim$\-I\-Get\-Collision\-Data@{$\sim$\-I\-Get\-Collision\-Data}!IGetCollisionData@{I\-Get\-Collision\-Data}}
+\subsubsection[{$\sim$\-I\-Get\-Collision\-Data}]{\setlength{\rightskip}{0pt plus 5cm}I\-Get\-Collision\-Data\-::$\sim$\-I\-Get\-Collision\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classIGetCollisionData_a15a428835a190d306862a213bfbb063b}
+
+
+Definition at line 10 of file I\-Get\-Collision\-Data.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}{\index{I\-Get\-Collision\-Data@{I\-Get\-Collision\-Data}!get\-Collisiondata@{get\-Collisiondata}}
+\index{get\-Collisiondata@{get\-Collisiondata}!IGetCollisionData@{I\-Get\-Collision\-Data}}
+\subsubsection[{get\-Collisiondata}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\-Get\-Collision\-Data\-::get\-Collisiondata (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf A\-Renderable} $\ast$ $>$ $\ast$}]{p\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}
+
+
+All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. 
+
+
+
+Implemented in \hyperlink{classCTile__Container_ae61b573ed7b47bea750040a26b492632}{C\-Tile\-\_\-\-Container}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{IGetCollisionData_8h}{I\-Get\-Collision\-Data.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Interfaces/\hyperlink{IGetCollisionData_8cpp}{I\-Get\-Collision\-Data.\-cpp}\end{DoxyCompactItemize}

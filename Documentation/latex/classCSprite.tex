@@ -1,0 +1,130 @@
+\hypertarget{classCSprite}{\section{C\-Sprite Class Reference}
+\label{classCSprite}\index{C\-Sprite@{C\-Sprite}}
+}
+
+
+Wrapper class for S\-F\-M\-L 2.\-1 Sprite.  
+
+
+
+
+{\ttfamily \#include $<$C\-Sprite.\-h$>$}
+
+
+
+Inheritance diagram for C\-Sprite\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classCSprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Sprite\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classCSprite__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSprite_afdfe7ac25b872dbafd60e6329185b0c5}{C\-Sprite} (\hyperlink{classCTexture}{C\-Texture} $\ast$p\-Texture, const sf\-::\-Vector2$<$ int $>$ \&curr\-Sub)
+\item 
+\hyperlink{classCSprite_a274146d807d98947cff67621e783d31d}{$\sim$\-C\-Sprite} ()
+\item 
+\hyperlink{classCSprite_a7fa10fe45cf1683163671b7483ffc758}{C\-Sprite} (const \hyperlink{classCSprite}{C\-Sprite} \&other)
+\item 
+void \hyperlink{classCSprite_a2162a3b87f87eecf9e9b93fe4c573690}{set\-Sub\-Image} (int col, int row)
+\begin{DoxyCompactList}\small\item\em sets the current sub image being rendered from the texture \end{DoxyCompactList}\item 
+void \hyperlink{classCSprite_a6e46dd766754438ebdefadf3449540da}{set\-Sub\-Image} (const sf\-::\-Vector2$<$ int $>$ $\ast$new\-Sub)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper class for S\-F\-M\-L 2.\-1 Sprite. 
+
+Definition at line 17 of file C\-Sprite.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCSprite_afdfe7ac25b872dbafd60e6329185b0c5}{\index{C\-Sprite@{C\-Sprite}!C\-Sprite@{C\-Sprite}}
+\index{C\-Sprite@{C\-Sprite}!CSprite@{C\-Sprite}}
+\subsubsection[{C\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}C\-Sprite\-::\-C\-Sprite (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Texture} $\ast$}]{p\-Texture, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{curr\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classCSprite_afdfe7ac25b872dbafd60e6329185b0c5}
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Texture} & texture that this sprite will be rendering with \\
+\hline
+{\em curr\-Sub} & L\-E\-N\-G\-T\-H current sub-\/image being rendered \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file C\-Sprite.\-cpp.
+
+\hypertarget{classCSprite_a274146d807d98947cff67621e783d31d}{\index{C\-Sprite@{C\-Sprite}!$\sim$\-C\-Sprite@{$\sim$\-C\-Sprite}}
+\index{$\sim$\-C\-Sprite@{$\sim$\-C\-Sprite}!CSprite@{C\-Sprite}}
+\subsubsection[{$\sim$\-C\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}C\-Sprite\-::$\sim$\-C\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCSprite_a274146d807d98947cff67621e783d31d}
+
+
+Definition at line 26 of file C\-Sprite.\-cpp.
+
+\hypertarget{classCSprite_a7fa10fe45cf1683163671b7483ffc758}{\index{C\-Sprite@{C\-Sprite}!C\-Sprite@{C\-Sprite}}
+\index{C\-Sprite@{C\-Sprite}!CSprite@{C\-Sprite}}
+\subsubsection[{C\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}C\-Sprite\-::\-C\-Sprite (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\-Sprite} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classCSprite_a7fa10fe45cf1683163671b7483ffc758}
+
+
+Definition at line 31 of file C\-Sprite.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCSprite_a2162a3b87f87eecf9e9b93fe4c573690}{\index{C\-Sprite@{C\-Sprite}!set\-Sub\-Image@{set\-Sub\-Image}}
+\index{set\-Sub\-Image@{set\-Sub\-Image}!CSprite@{C\-Sprite}}
+\subsubsection[{set\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Sprite\-::set\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)}}\label{classCSprite_a2162a3b87f87eecf9e9b93fe4c573690}
+
+
+sets the current sub image being rendered from the texture 
+
+
+
+Definition at line 40 of file C\-Sprite.\-cpp.
+
+\hypertarget{classCSprite_a6e46dd766754438ebdefadf3449540da}{\index{C\-Sprite@{C\-Sprite}!set\-Sub\-Image@{set\-Sub\-Image}}
+\index{set\-Sub\-Image@{set\-Sub\-Image}!CSprite@{C\-Sprite}}
+\subsubsection[{set\-Sub\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Sprite\-::set\-Sub\-Image (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2$<$ int $>$ $\ast$}]{new\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classCSprite_a6e46dd766754438ebdefadf3449540da}
+
+
+Definition at line 53 of file C\-Sprite.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CSprite_8h}{C\-Sprite.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Graphics/\hyperlink{CSprite_8cpp}{C\-Sprite.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="CUI" name="CUI">
+<area shape="rect" id="node2" href="$classAUserInput.html" title="Abstract class which decomposes the different types of user input. " alt="" coords="5,6,195,157"/>
+<area shape="rect" id="node3" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="220,28,340,135"/>
+</map>

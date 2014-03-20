@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd Documentation
+doxygen Doxyfile
+cd ..
+
+# link the fresh page to here
+rm index.html
+ln -s Documentation/html/index.html index.html

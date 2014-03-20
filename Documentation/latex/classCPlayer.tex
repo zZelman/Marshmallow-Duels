@@ -1,0 +1,192 @@
+\hypertarget{classCPlayer}{\section{C\-Player Class Reference}
+\label{classCPlayer}\index{C\-Player@{C\-Player}}
+}
+
+
+Base class of each individual player.  
+
+
+
+
+{\ttfamily \#include $<$C\-Player.\-h$>$}
+
+
+
+Inheritance diagram for C\-Player\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Player\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCPlayer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCPlayer_a983c63a3e18585a94f66f0bd23c57cd3}{C\-Player} (\hyperlink{classCTexture}{C\-Texture} $\ast$p\-Texture, const sf\-::\-Vector2$<$ int $>$ \&curr\-Sub)
+\item 
+\hyperlink{classCPlayer_ad02df04887bccfe3b82298895da24af6}{$\sim$\-C\-Player} ()
+\item 
+void \hyperlink{classCPlayer_aa77025c046956b109a76d53c12a80fa5}{update} ()
+\begin{DoxyCompactList}\small\item\em Function to update object state each update cycle. \end{DoxyCompactList}\item 
+bool \hyperlink{classCPlayer_ab91fc8d3c4e992dd20270d5743d75f06}{user\-Input\-\_\-key\-Press} (sf\-::\-Event $\ast$p\-Event)
+\item 
+bool \hyperlink{classCPlayer_a8ef81a467d70f1e4529f3c905820311b}{user\-Input\-\_\-key\-Release} (sf\-::\-Event $\ast$p\-Event)
+\item 
+bool \hyperlink{classCPlayer_ab73ca18309b25410b1fdb54a9ee60e67}{user\-Input\-\_\-mouse\-Press} (sf\-::\-Event $\ast$p\-Event)
+\item 
+bool \hyperlink{classCPlayer_a915cf5ad902cddb376eb4c37d362e3b1}{user\-Input\-\_\-mouse\-Release} (sf\-::\-Event $\ast$p\-Event)
+\item 
+void \hyperlink{classCPlayer_aedadef185076d940923e9402a15cdf90}{step\-Normally} ()
+\begin{DoxyCompactList}\small\item\em A normal step in 1 update call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class of each individual player. 
+
+The player is the thing that the human person controls in the game world 
+
+Definition at line 23 of file C\-Player.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCPlayer_a983c63a3e18585a94f66f0bd23c57cd3}{\index{C\-Player@{C\-Player}!C\-Player@{C\-Player}}
+\index{C\-Player@{C\-Player}!CPlayer@{C\-Player}}
+\subsubsection[{C\-Player}]{\setlength{\rightskip}{0pt plus 5cm}C\-Player\-::\-C\-Player (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Texture} $\ast$}]{p\-Texture, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{curr\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classCPlayer_a983c63a3e18585a94f66f0bd23c57cd3}
+
+
+Definition at line 11 of file C\-Player.\-cpp.
+
+\hypertarget{classCPlayer_ad02df04887bccfe3b82298895da24af6}{\index{C\-Player@{C\-Player}!$\sim$\-C\-Player@{$\sim$\-C\-Player}}
+\index{$\sim$\-C\-Player@{$\sim$\-C\-Player}!CPlayer@{C\-Player}}
+\subsubsection[{$\sim$\-C\-Player}]{\setlength{\rightskip}{0pt plus 5cm}C\-Player\-::$\sim$\-C\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCPlayer_ad02df04887bccfe3b82298895da24af6}
+
+
+Definition at line 25 of file C\-Player.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCPlayer_aedadef185076d940923e9402a15cdf90}{\index{C\-Player@{C\-Player}!step\-Normally@{step\-Normally}}
+\index{step\-Normally@{step\-Normally}!CPlayer@{C\-Player}}
+\subsubsection[{step\-Normally}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Player\-::step\-Normally (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPlayer_aedadef185076d940923e9402a15cdf90}
+
+
+A normal step in 1 update call. 
+
+When this method is called, it is assumed that there will N\-O\-T be a collision during 1 step. 
+
+Implements \hyperlink{classDPhysics_a414316ffcec06dbf01ced086bbb92b55}{D\-Physics}.
+
+
+
+Definition at line 136 of file C\-Player.\-cpp.
+
+\hypertarget{classCPlayer_aa77025c046956b109a76d53c12a80fa5}{\index{C\-Player@{C\-Player}!update@{update}}
+\index{update@{update}!CPlayer@{C\-Player}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Player\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPlayer_aa77025c046956b109a76d53c12a80fa5}
+
+
+Function to update object state each update cycle. 
+
+
+
+Implements \hyperlink{classAUpdate_a9f5be387e467fc5eea7fc45882abd949}{A\-Update}.
+
+
+
+Definition at line 148 of file C\-Player.\-cpp.
+
+\hypertarget{classCPlayer_ab91fc8d3c4e992dd20270d5743d75f06}{\index{C\-Player@{C\-Player}!user\-Input\-\_\-key\-Press@{user\-Input\-\_\-key\-Press}}
+\index{user\-Input\-\_\-key\-Press@{user\-Input\-\_\-key\-Press}!CPlayer@{C\-Player}}
+\subsubsection[{user\-Input\-\_\-key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Player\-::user\-Input\-\_\-key\-Press (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPlayer_ab91fc8d3c4e992dd20270d5743d75f06}
+
+
+Implements \hyperlink{classAUserInput_a110239bcc0461666583d1dc940cb5d13}{A\-User\-Input}.
+
+
+
+Definition at line 41 of file C\-Player.\-cpp.
+
+\hypertarget{classCPlayer_a8ef81a467d70f1e4529f3c905820311b}{\index{C\-Player@{C\-Player}!user\-Input\-\_\-key\-Release@{user\-Input\-\_\-key\-Release}}
+\index{user\-Input\-\_\-key\-Release@{user\-Input\-\_\-key\-Release}!CPlayer@{C\-Player}}
+\subsubsection[{user\-Input\-\_\-key\-Release}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Player\-::user\-Input\-\_\-key\-Release (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPlayer_a8ef81a467d70f1e4529f3c905820311b}
+
+
+Implements \hyperlink{classAUserInput_afe8ae22fff673d788e366b9b29ffa67d}{A\-User\-Input}.
+
+
+
+Definition at line 83 of file C\-Player.\-cpp.
+
+\hypertarget{classCPlayer_ab73ca18309b25410b1fdb54a9ee60e67}{\index{C\-Player@{C\-Player}!user\-Input\-\_\-mouse\-Press@{user\-Input\-\_\-mouse\-Press}}
+\index{user\-Input\-\_\-mouse\-Press@{user\-Input\-\_\-mouse\-Press}!CPlayer@{C\-Player}}
+\subsubsection[{user\-Input\-\_\-mouse\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Player\-::user\-Input\-\_\-mouse\-Press (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPlayer_ab73ca18309b25410b1fdb54a9ee60e67}
+
+
+Implements \hyperlink{classAUserInput_a567e0d0610bd2ef2e23fed64b3e56d2b}{A\-User\-Input}.
+
+
+
+Definition at line 124 of file C\-Player.\-cpp.
+
+\hypertarget{classCPlayer_a915cf5ad902cddb376eb4c37d362e3b1}{\index{C\-Player@{C\-Player}!user\-Input\-\_\-mouse\-Release@{user\-Input\-\_\-mouse\-Release}}
+\index{user\-Input\-\_\-mouse\-Release@{user\-Input\-\_\-mouse\-Release}!CPlayer@{C\-Player}}
+\subsubsection[{user\-Input\-\_\-mouse\-Release}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-Player\-::user\-Input\-\_\-mouse\-Release (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPlayer_a915cf5ad902cddb376eb4c37d362e3b1}
+
+
+Implements \hyperlink{classAUserInput_a570f71dde4825c3e9bdcf6b58857f514}{A\-User\-Input}.
+
+
+
+Definition at line 130 of file C\-Player.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CPlayer_8h}{C\-Player.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Players/\hyperlink{CPlayer_8cpp}{C\-Player.\-cpp}\end{DoxyCompactItemize}

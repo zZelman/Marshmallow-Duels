@@ -1,0 +1,4 @@
+<map id="AUserInput" name="AUserInput">
+<area shape="rect" id="node2" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,206,195,386"/>
+<area shape="rect" id="node3" href="$classCUI.html" title="&#39;Parses&#39; user events, as well as keeps Bookkeeping information on several user states. " alt="" coords="219,213,409,379"/>
+</map>

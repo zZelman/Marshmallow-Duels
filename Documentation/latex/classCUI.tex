@@ -1,0 +1,166 @@
+\hypertarget{classCUI}{\section{C\-U\-I Class Reference}
+\label{classCUI}\index{C\-U\-I@{C\-U\-I}}
+}
+
+
+'Parses' user events, as well as keeps Bookkeeping information on several user states.  
+
+
+
+
+{\ttfamily \#include $<$C\-U\-I.\-h$>$}
+
+
+
+Inheritance diagram for C\-U\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classCUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-U\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classCUI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCUI_aaca9bcb98d25fa4b4868bc3266f44ec6}{C\-U\-I} (\hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player)
+\item 
+\hyperlink{classCUI_a76a9c9d894e90c77549c4393c1181598}{$\sim$\-C\-U\-I} ()
+\item 
+void \hyperlink{classCUI_ab0b322040b41a6650bd625216f77b75c}{update} ()
+\item 
+bool \hyperlink{classCUI_addb1531f20541cb7c7f8688f1cd843e9}{user\-Input\-\_\-key\-Press} (sf\-::\-Event $\ast$p\-Event)
+\item 
+bool \hyperlink{classCUI_a0495bb6ad5fba9ef0552a487151f7896}{user\-Input\-\_\-key\-Release} (sf\-::\-Event $\ast$p\-Event)
+\item 
+bool \hyperlink{classCUI_a6edfa48bb429f6e1468f5c3568cf83c5}{user\-Input\-\_\-mouse\-Press} (sf\-::\-Event $\ast$p\-Event)
+\item 
+bool \hyperlink{classCUI_a64e3c8ad256e2d814e7112d201cb78ae}{user\-Input\-\_\-mouse\-Release} (sf\-::\-Event $\ast$p\-Event)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+'Parses' user events, as well as keeps Bookkeeping information on several user states. 
+
+T\-O\-D\-O\-: Uses a finite state machine to determine how user events are interpreted (menu vs. game-\/play) 
+
+Definition at line 23 of file C\-U\-I.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCUI_aaca9bcb98d25fa4b4868bc3266f44ec6}{\index{C\-U\-I@{C\-U\-I}!C\-U\-I@{C\-U\-I}}
+\index{C\-U\-I@{C\-U\-I}!CUI@{C\-U\-I}}
+\subsubsection[{C\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-U\-I\-::\-C\-U\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Player} $\ast$}]{p\-Player}
+\end{DoxyParamCaption}
+)}}\label{classCUI_aaca9bcb98d25fa4b4868bc3266f44ec6}
+
+
+Definition at line 12 of file C\-U\-I.\-cpp.
+
+\hypertarget{classCUI_a76a9c9d894e90c77549c4393c1181598}{\index{C\-U\-I@{C\-U\-I}!$\sim$\-C\-U\-I@{$\sim$\-C\-U\-I}}
+\index{$\sim$\-C\-U\-I@{$\sim$\-C\-U\-I}!CUI@{C\-U\-I}}
+\subsubsection[{$\sim$\-C\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}C\-U\-I\-::$\sim$\-C\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCUI_a76a9c9d894e90c77549c4393c1181598}
+
+
+Definition at line 18 of file C\-U\-I.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCUI_ab0b322040b41a6650bd625216f77b75c}{\index{C\-U\-I@{C\-U\-I}!update@{update}}
+\index{update@{update}!CUI@{C\-U\-I}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void C\-U\-I\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCUI_ab0b322040b41a6650bd625216f77b75c}
+
+
+Implements \hyperlink{classIUpdateable_a46d178a1ecdab33bcaad25d9b38582a5}{I\-Updateable}.
+
+
+
+Definition at line 23 of file C\-U\-I.\-cpp.
+
+\hypertarget{classCUI_addb1531f20541cb7c7f8688f1cd843e9}{\index{C\-U\-I@{C\-U\-I}!user\-Input\-\_\-key\-Press@{user\-Input\-\_\-key\-Press}}
+\index{user\-Input\-\_\-key\-Press@{user\-Input\-\_\-key\-Press}!CUI@{C\-U\-I}}
+\subsubsection[{user\-Input\-\_\-key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-U\-I\-::user\-Input\-\_\-key\-Press (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCUI_addb1531f20541cb7c7f8688f1cd843e9}
+
+
+Implements \hyperlink{classAUserInput_a110239bcc0461666583d1dc940cb5d13}{A\-User\-Input}.
+
+
+
+Definition at line 28 of file C\-U\-I.\-cpp.
+
+\hypertarget{classCUI_a0495bb6ad5fba9ef0552a487151f7896}{\index{C\-U\-I@{C\-U\-I}!user\-Input\-\_\-key\-Release@{user\-Input\-\_\-key\-Release}}
+\index{user\-Input\-\_\-key\-Release@{user\-Input\-\_\-key\-Release}!CUI@{C\-U\-I}}
+\subsubsection[{user\-Input\-\_\-key\-Release}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-U\-I\-::user\-Input\-\_\-key\-Release (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCUI_a0495bb6ad5fba9ef0552a487151f7896}
+
+
+Implements \hyperlink{classAUserInput_afe8ae22fff673d788e366b9b29ffa67d}{A\-User\-Input}.
+
+
+
+Definition at line 40 of file C\-U\-I.\-cpp.
+
+\hypertarget{classCUI_a6edfa48bb429f6e1468f5c3568cf83c5}{\index{C\-U\-I@{C\-U\-I}!user\-Input\-\_\-mouse\-Press@{user\-Input\-\_\-mouse\-Press}}
+\index{user\-Input\-\_\-mouse\-Press@{user\-Input\-\_\-mouse\-Press}!CUI@{C\-U\-I}}
+\subsubsection[{user\-Input\-\_\-mouse\-Press}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-U\-I\-::user\-Input\-\_\-mouse\-Press (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCUI_a6edfa48bb429f6e1468f5c3568cf83c5}
+
+
+Implements \hyperlink{classAUserInput_a567e0d0610bd2ef2e23fed64b3e56d2b}{A\-User\-Input}.
+
+
+
+Definition at line 53 of file C\-U\-I.\-cpp.
+
+\hypertarget{classCUI_a64e3c8ad256e2d814e7112d201cb78ae}{\index{C\-U\-I@{C\-U\-I}!user\-Input\-\_\-mouse\-Release@{user\-Input\-\_\-mouse\-Release}}
+\index{user\-Input\-\_\-mouse\-Release@{user\-Input\-\_\-mouse\-Release}!CUI@{C\-U\-I}}
+\subsubsection[{user\-Input\-\_\-mouse\-Release}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-U\-I\-::user\-Input\-\_\-mouse\-Release (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCUI_a64e3c8ad256e2d814e7112d201cb78ae}
+
+
+Implements \hyperlink{classAUserInput_a570f71dde4825c3e9bdcf6b58857f514}{A\-User\-Input}.
+
+
+
+Definition at line 67 of file C\-U\-I.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CUI_8h}{C\-U\-I.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-U\-I/\hyperlink{CUI_8cpp}{C\-U\-I.\-cpp}\end{DoxyCompactItemize}

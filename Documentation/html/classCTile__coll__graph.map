@@ -1,0 +1,6 @@
+<map id="CTile" name="CTile">
+<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,334,147,543"/>
+<area shape="rect" id="node3" href="$classCSprite.html" title="Wrapper class for SFML 2.1 Sprite. " alt="" coords="17,133,135,269"/>
+<area shape="rect" id="node5" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,385,300,492"/>
+<area shape="rect" id="node6" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="176,148,296,255"/>
+</map>

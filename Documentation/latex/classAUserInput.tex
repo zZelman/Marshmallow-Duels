@@ -1,0 +1,146 @@
+\hypertarget{classAUserInput}{\section{A\-User\-Input Class Reference}
+\label{classAUserInput}\index{A\-User\-Input@{A\-User\-Input}}
+}
+
+
+Abstract class which decomposes the different types of user input.  
+
+
+
+
+{\ttfamily \#include $<$A\-User\-Input.\-h$>$}
+
+
+
+Inheritance diagram for A\-User\-Input\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAUserInput__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\-User\-Input\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classAUserInput__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAUserInput_1_1SKeyStates}{S\-Key\-States}
+\begin{DoxyCompactList}\small\item\em Representation of acceptable key presses, and states of those keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAUserInput_a83cdb578d5ff8c37f1fb219234d7319b}{A\-User\-Input} ()
+\item 
+virtual \hyperlink{classAUserInput_a8e45374f4f78942389badab10fa1ef04}{$\sim$\-A\-User\-Input} ()
+\item 
+virtual bool \hyperlink{classAUserInput_a110239bcc0461666583d1dc940cb5d13}{user\-Input\-\_\-key\-Press} (sf\-::\-Event $\ast$p\-Event)=0
+\item 
+virtual bool \hyperlink{classAUserInput_afe8ae22fff673d788e366b9b29ffa67d}{user\-Input\-\_\-key\-Release} (sf\-::\-Event $\ast$p\-Event)=0
+\item 
+virtual bool \hyperlink{classAUserInput_a567e0d0610bd2ef2e23fed64b3e56d2b}{user\-Input\-\_\-mouse\-Press} (sf\-::\-Event $\ast$p\-Event)=0
+\item 
+virtual bool \hyperlink{classAUserInput_a570f71dde4825c3e9bdcf6b58857f514}{user\-Input\-\_\-mouse\-Release} (sf\-::\-Event $\ast$p\-Event)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAUserInput_1_1SKeyStates}{A\-User\-Input\-::\-S\-Key\-States} \hyperlink{classAUserInput_a55b881326b920413bbcdf6e02c4fb021}{m\-\_\-s\-Keys}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class which decomposes the different types of user input. 
+
+Definition at line 16 of file A\-User\-Input.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAUserInput_a83cdb578d5ff8c37f1fb219234d7319b}{\index{A\-User\-Input@{A\-User\-Input}!A\-User\-Input@{A\-User\-Input}}
+\index{A\-User\-Input@{A\-User\-Input}!AUserInput@{A\-User\-Input}}
+\subsubsection[{A\-User\-Input}]{\setlength{\rightskip}{0pt plus 5cm}A\-User\-Input\-::\-A\-User\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAUserInput_a83cdb578d5ff8c37f1fb219234d7319b}
+
+
+Definition at line 10 of file A\-User\-Input.\-cpp.
+
+\hypertarget{classAUserInput_a8e45374f4f78942389badab10fa1ef04}{\index{A\-User\-Input@{A\-User\-Input}!$\sim$\-A\-User\-Input@{$\sim$\-A\-User\-Input}}
+\index{$\sim$\-A\-User\-Input@{$\sim$\-A\-User\-Input}!AUserInput@{A\-User\-Input}}
+\subsubsection[{$\sim$\-A\-User\-Input}]{\setlength{\rightskip}{0pt plus 5cm}A\-User\-Input\-::$\sim$\-A\-User\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAUserInput_a8e45374f4f78942389badab10fa1ef04}
+
+
+Definition at line 16 of file A\-User\-Input.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAUserInput_a110239bcc0461666583d1dc940cb5d13}{\index{A\-User\-Input@{A\-User\-Input}!user\-Input\-\_\-key\-Press@{user\-Input\-\_\-key\-Press}}
+\index{user\-Input\-\_\-key\-Press@{user\-Input\-\_\-key\-Press}!AUserInput@{A\-User\-Input}}
+\subsubsection[{user\-Input\-\_\-key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\-User\-Input\-::user\-Input\-\_\-key\-Press (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAUserInput_a110239bcc0461666583d1dc940cb5d13}
+
+
+Implemented in \hyperlink{classCPlayer_ab91fc8d3c4e992dd20270d5743d75f06}{C\-Player}, and \hyperlink{classCUI_addb1531f20541cb7c7f8688f1cd843e9}{C\-U\-I}.
+
+\hypertarget{classAUserInput_afe8ae22fff673d788e366b9b29ffa67d}{\index{A\-User\-Input@{A\-User\-Input}!user\-Input\-\_\-key\-Release@{user\-Input\-\_\-key\-Release}}
+\index{user\-Input\-\_\-key\-Release@{user\-Input\-\_\-key\-Release}!AUserInput@{A\-User\-Input}}
+\subsubsection[{user\-Input\-\_\-key\-Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\-User\-Input\-::user\-Input\-\_\-key\-Release (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAUserInput_afe8ae22fff673d788e366b9b29ffa67d}
+
+
+Implemented in \hyperlink{classCPlayer_a8ef81a467d70f1e4529f3c905820311b}{C\-Player}, and \hyperlink{classCUI_a0495bb6ad5fba9ef0552a487151f7896}{C\-U\-I}.
+
+\hypertarget{classAUserInput_a567e0d0610bd2ef2e23fed64b3e56d2b}{\index{A\-User\-Input@{A\-User\-Input}!user\-Input\-\_\-mouse\-Press@{user\-Input\-\_\-mouse\-Press}}
+\index{user\-Input\-\_\-mouse\-Press@{user\-Input\-\_\-mouse\-Press}!AUserInput@{A\-User\-Input}}
+\subsubsection[{user\-Input\-\_\-mouse\-Press}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\-User\-Input\-::user\-Input\-\_\-mouse\-Press (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAUserInput_a567e0d0610bd2ef2e23fed64b3e56d2b}
+
+
+Implemented in \hyperlink{classCPlayer_ab73ca18309b25410b1fdb54a9ee60e67}{C\-Player}, and \hyperlink{classCUI_a6edfa48bb429f6e1468f5c3568cf83c5}{C\-U\-I}.
+
+\hypertarget{classAUserInput_a570f71dde4825c3e9bdcf6b58857f514}{\index{A\-User\-Input@{A\-User\-Input}!user\-Input\-\_\-mouse\-Release@{user\-Input\-\_\-mouse\-Release}}
+\index{user\-Input\-\_\-mouse\-Release@{user\-Input\-\_\-mouse\-Release}!AUserInput@{A\-User\-Input}}
+\subsubsection[{user\-Input\-\_\-mouse\-Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool A\-User\-Input\-::user\-Input\-\_\-mouse\-Release (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event $\ast$}]{p\-Event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAUserInput_a570f71dde4825c3e9bdcf6b58857f514}
+
+
+Implemented in \hyperlink{classCPlayer_a915cf5ad902cddb376eb4c37d362e3b1}{C\-Player}, and \hyperlink{classCUI_a64e3c8ad256e2d814e7112d201cb78ae}{C\-U\-I}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classAUserInput_a55b881326b920413bbcdf6e02c4fb021}{\index{A\-User\-Input@{A\-User\-Input}!m\-\_\-s\-Keys@{m\-\_\-s\-Keys}}
+\index{m\-\_\-s\-Keys@{m\-\_\-s\-Keys}!AUserInput@{A\-User\-Input}}
+\subsubsection[{m\-\_\-s\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf A\-User\-Input\-::\-S\-Key\-States}  A\-User\-Input\-::m\-\_\-s\-Keys\hspace{0.3cm}{\ttfamily [protected]}}}\label{classAUserInput_a55b881326b920413bbcdf6e02c4fb021}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{AUserInput_8h}{A\-User\-Input.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Abstracts/\hyperlink{AUserInput_8cpp}{A\-User\-Input.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{classAUpdate}{\section{A\-Update Class Reference}
+\label{classAUpdate}\index{A\-Update@{A\-Update}}
+}
+
+
+Wrapper class to I\-Updatable which only adds 1 variable.  
+
+
+
+
+{\ttfamily \#include $<$A\-Update.\-h$>$}
+
+
+
+Inheritance diagram for A\-Update\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classAUpdate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\-Update\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classAUpdate__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAUpdate_ac4d63cf5f9ca0bf2aeac2e61cdd8d981}{A\-Update} ()
+\item 
+virtual \hyperlink{classAUpdate_ab62e2d98b3711d172647442bb5889415}{$\sim$\-A\-Update} ()
+\item 
+virtual void \hyperlink{classAUpdate_a9f5be387e467fc5eea7fc45882abd949}{update} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classAUpdate_adf0a017c2fd5abd12f64f7f0fd992e66}{m\-\_\-is\-First\-Update}
+\begin{DoxyCompactList}\small\item\em Boolean to keep track of first-\/time update cycles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper class to I\-Updatable which only adds 1 variable. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classAUpdate_adf0a017c2fd5abd12f64f7f0fd992e66}{m\-\_\-is\-First\-Update} 
+\end{DoxySeeAlso}
+
+
+Definition at line 18 of file A\-Update.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAUpdate_ac4d63cf5f9ca0bf2aeac2e61cdd8d981}{\index{A\-Update@{A\-Update}!A\-Update@{A\-Update}}
+\index{A\-Update@{A\-Update}!AUpdate@{A\-Update}}
+\subsubsection[{A\-Update}]{\setlength{\rightskip}{0pt plus 5cm}A\-Update\-::\-A\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAUpdate_ac4d63cf5f9ca0bf2aeac2e61cdd8d981}
+
+
+Definition at line 10 of file A\-Update.\-cpp.
+
+\hypertarget{classAUpdate_ab62e2d98b3711d172647442bb5889415}{\index{A\-Update@{A\-Update}!$\sim$\-A\-Update@{$\sim$\-A\-Update}}
+\index{$\sim$\-A\-Update@{$\sim$\-A\-Update}!AUpdate@{A\-Update}}
+\subsubsection[{$\sim$\-A\-Update}]{\setlength{\rightskip}{0pt plus 5cm}A\-Update\-::$\sim$\-A\-Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAUpdate_ab62e2d98b3711d172647442bb5889415}
+
+
+Definition at line 16 of file A\-Update.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAUpdate_a9f5be387e467fc5eea7fc45882abd949}{\index{A\-Update@{A\-Update}!update@{update}}
+\index{update@{update}!AUpdate@{A\-Update}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}virtual void A\-Update\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classAUpdate_a9f5be387e467fc5eea7fc45882abd949}
+
+
+Implements \hyperlink{classIUpdateable_a46d178a1ecdab33bcaad25d9b38582a5}{I\-Updateable}.
+
+
+
+Implemented in \hyperlink{classCTile_a818a17e48a7219eedac950b82c641ee0}{C\-Tile}, and \hyperlink{classCPlayer_aa77025c046956b109a76d53c12a80fa5}{C\-Player}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classAUpdate_adf0a017c2fd5abd12f64f7f0fd992e66}{\index{A\-Update@{A\-Update}!m\-\_\-is\-First\-Update@{m\-\_\-is\-First\-Update}}
+\index{m\-\_\-is\-First\-Update@{m\-\_\-is\-First\-Update}!AUpdate@{A\-Update}}
+\subsubsection[{m\-\_\-is\-First\-Update}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-Update\-::m\-\_\-is\-First\-Update\hspace{0.3cm}{\ttfamily [protected]}}}\label{classAUpdate_adf0a017c2fd5abd12f64f7f0fd992e66}
+
+
+Boolean to keep track of first-\/time update cycles. 
+
+This is intended to prevent time-\/sensitive things from freaking out from the objects init time to the first update 
+
+Definition at line 34 of file A\-Update.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{AUpdate_8h}{A\-Update.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Abstracts/\hyperlink{AUpdate_8cpp}{A\-Update.\-cpp}\end{DoxyCompactItemize}

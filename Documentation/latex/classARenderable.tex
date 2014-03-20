@@ -1,0 +1,260 @@
+\hypertarget{classARenderable}{\section{A\-Renderable Class Reference}
+\label{classARenderable}\index{A\-Renderable@{A\-Renderable}}
+}
+
+
+An abstract base class for all things that can be rendered.  
+
+
+
+
+{\ttfamily \#include $<$A\-Renderable.\-h$>$}
+
+
+
+Inheritance diagram for A\-Renderable\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classARenderable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\-Renderable\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classARenderable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classARenderable_a945fecfa1012fc94f186b8814f225ae8}{A\-Renderable} (\hyperlink{classCTexture}{C\-Texture} $\ast$p\-Texture, const sf\-::\-Vector2$<$ int $>$ \&curr\-Sub)
+\item 
+\hyperlink{classARenderable_a3d575592900ff1796452f35e7c618e6d}{A\-Renderable} (\hyperlink{classCSprite}{C\-Sprite} $\ast$p\-Sprite)
+\begin{DoxyCompactList}\small\item\em if this constructor is used, note that this object then takes responsibility for the C\-Sprite$\ast$ \end{DoxyCompactList}\item 
+virtual \hyperlink{classARenderable_a4242e972db0272afa33bbb60cb783132}{$\sim$\-A\-Renderable} ()
+\item 
+\hyperlink{classCSprite}{C\-Sprite} $\ast$const \hyperlink{classARenderable_a2fc0c24af527998d4d1a891ede342b8b}{get\-Sprite} () const 
+\begin{DoxyCompactList}\small\item\em Returns the A\-P\-I wrapper version of the sprite. \end{DoxyCompactList}\item 
+sf\-::\-Sprite $\ast$const \hyperlink{classARenderable_a87845b6d223c0f8907b465cdcf48311d}{get\-Sprite\-\_\-\-A\-P\-I} () const 
+\begin{DoxyCompactList}\small\item\em Returns the A\-P\-I version of this sprite. \end{DoxyCompactList}\item 
+sf\-::\-Float\-Rect \hyperlink{classARenderable_a77d3d8b9f8d7f0e8b860abba2f6c53c9}{get\-Global\-Bounds} ()
+\item 
+const sf\-::\-View \& \hyperlink{classARenderable_affb8b45bddba5083da20254577e32536}{get\-View} () const 
+\item 
+bool \hyperlink{classARenderable_a67b01539f9b4b960f0ad3a9a8c0bd5c1}{get\-Has\-View} () const 
+\item 
+void \hyperlink{classARenderable_a1d0db7e6ba2e9bf6d8accb4164531b46}{set\-Position} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Forwards the position coords into the A\-P\-I sprite to re-\/set the position of the sprite in G\-L\-O\-B\-A\-L coords. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCSprite}{C\-Sprite} $\ast$ \hyperlink{classARenderable_a6030df923c81b400e94ff1f6a9df41f8}{m\-\_\-p\-Sprite}
+\begin{DoxyCompactList}\small\item\em This class assumes responsibility for this \hyperlink{classCSprite}{C\-Sprite} object. \end{DoxyCompactList}\item 
+sf\-::\-View \hyperlink{classARenderable_a9385344aed3d507e828e5b20c8846f4a}{m\-\_\-view}
+\begin{DoxyCompactList}\small\item\em A\-P\-I subsection of the world being rendered, if this \hyperlink{classARenderable}{A\-Renderable} has one. \end{DoxyCompactList}\item 
+bool \hyperlink{classARenderable_a7975927d5e1b3cffb6b51b8e058fcb51}{has\-View}
+\begin{DoxyCompactList}\small\item\em True = m\-\_\-view has meaningful render data ; False = m\-\_\-view is garbage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract base class for all things that can be rendered. 
+
+Holds A\-P\-I wrapper class for rendering \hyperlink{classCSprite}{C\-Sprite}.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classCSprite}{C\-Sprite} 
+\end{DoxySeeAlso}
+
+
+Definition at line 22 of file A\-Renderable.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classARenderable_a945fecfa1012fc94f186b8814f225ae8}{\index{A\-Renderable@{A\-Renderable}!A\-Renderable@{A\-Renderable}}
+\index{A\-Renderable@{A\-Renderable}!ARenderable@{A\-Renderable}}
+\subsubsection[{A\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}A\-Renderable\-::\-A\-Renderable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Texture} $\ast$}]{p\-Texture, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{curr\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classARenderable_a945fecfa1012fc94f186b8814f225ae8}
+
+\begin{DoxyParams}{Parameters}
+{\em p\-Texture} & A A\-P\-I wrapper class that is allocated elsewhere that this renderable base class with reference with its \hyperlink{classCSprite}{C\-Sprite} \\
+\hline
+{\em curr\-Sub} & The starting current sub image being rendered by the \hyperlink{classCSprite}{C\-Sprite} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 11 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_a3d575592900ff1796452f35e7c618e6d}{\index{A\-Renderable@{A\-Renderable}!A\-Renderable@{A\-Renderable}}
+\index{A\-Renderable@{A\-Renderable}!ARenderable@{A\-Renderable}}
+\subsubsection[{A\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}A\-Renderable\-::\-A\-Renderable (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Sprite} $\ast$}]{p\-Sprite}
+\end{DoxyParamCaption}
+)}}\label{classARenderable_a3d575592900ff1796452f35e7c618e6d}
+
+
+if this constructor is used, note that this object then takes responsibility for the C\-Sprite$\ast$ 
+
+
+
+Definition at line 19 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_a4242e972db0272afa33bbb60cb783132}{\index{A\-Renderable@{A\-Renderable}!$\sim$\-A\-Renderable@{$\sim$\-A\-Renderable}}
+\index{$\sim$\-A\-Renderable@{$\sim$\-A\-Renderable}!ARenderable@{A\-Renderable}}
+\subsubsection[{$\sim$\-A\-Renderable}]{\setlength{\rightskip}{0pt plus 5cm}A\-Renderable\-::$\sim$\-A\-Renderable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classARenderable_a4242e972db0272afa33bbb60cb783132}
+
+
+Definition at line 25 of file A\-Renderable.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classARenderable_a77d3d8b9f8d7f0e8b860abba2f6c53c9}{\index{A\-Renderable@{A\-Renderable}!get\-Global\-Bounds@{get\-Global\-Bounds}}
+\index{get\-Global\-Bounds@{get\-Global\-Bounds}!ARenderable@{A\-Renderable}}
+\subsubsection[{get\-Global\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Float\-Rect A\-Renderable\-::get\-Global\-Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classARenderable_a77d3d8b9f8d7f0e8b860abba2f6c53c9}
+
+
+Definition at line 44 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_a67b01539f9b4b960f0ad3a9a8c0bd5c1}{\index{A\-Renderable@{A\-Renderable}!get\-Has\-View@{get\-Has\-View}}
+\index{get\-Has\-View@{get\-Has\-View}!ARenderable@{A\-Renderable}}
+\subsubsection[{get\-Has\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-Renderable\-::get\-Has\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classARenderable_a67b01539f9b4b960f0ad3a9a8c0bd5c1}
+
+
+Definition at line 55 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_a2fc0c24af527998d4d1a891ede342b8b}{\index{A\-Renderable@{A\-Renderable}!get\-Sprite@{get\-Sprite}}
+\index{get\-Sprite@{get\-Sprite}!ARenderable@{A\-Renderable}}
+\subsubsection[{get\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite} $\ast$const A\-Renderable\-::get\-Sprite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classARenderable_a2fc0c24af527998d4d1a891ede342b8b}
+
+
+Returns the A\-P\-I wrapper version of the sprite. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classARenderable_a6030df923c81b400e94ff1f6a9df41f8}{m\-\_\-p\-Sprite} 
+\end{DoxySeeAlso}
+
+
+Definition at line 32 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_a87845b6d223c0f8907b465cdcf48311d}{\index{A\-Renderable@{A\-Renderable}!get\-Sprite\-\_\-\-A\-P\-I@{get\-Sprite\-\_\-\-A\-P\-I}}
+\index{get\-Sprite\-\_\-\-A\-P\-I@{get\-Sprite\-\_\-\-A\-P\-I}!ARenderable@{A\-Renderable}}
+\subsubsection[{get\-Sprite\-\_\-\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-Sprite $\ast$const A\-Renderable\-::get\-Sprite\-\_\-\-A\-P\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classARenderable_a87845b6d223c0f8907b465cdcf48311d}
+
+
+Returns the A\-P\-I version of this sprite. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classARenderable_a6030df923c81b400e94ff1f6a9df41f8}{m\-\_\-p\-Sprite} 
+\end{DoxySeeAlso}
+
+
+Definition at line 38 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_affb8b45bddba5083da20254577e32536}{\index{A\-Renderable@{A\-Renderable}!get\-View@{get\-View}}
+\index{get\-View@{get\-View}!ARenderable@{A\-Renderable}}
+\subsubsection[{get\-View}]{\setlength{\rightskip}{0pt plus 5cm}const sf\-::\-View \& A\-Renderable\-::get\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classARenderable_affb8b45bddba5083da20254577e32536}
+
+
+Definition at line 50 of file A\-Renderable.\-cpp.
+
+\hypertarget{classARenderable_a1d0db7e6ba2e9bf6d8accb4164531b46}{\index{A\-Renderable@{A\-Renderable}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!ARenderable@{A\-Renderable}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void A\-Renderable\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}}\label{classARenderable_a1d0db7e6ba2e9bf6d8accb4164531b46}
+
+
+Forwards the position coords into the A\-P\-I sprite to re-\/set the position of the sprite in G\-L\-O\-B\-A\-L coords. 
+
+
+
+Definition at line 61 of file A\-Renderable.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classARenderable_a7975927d5e1b3cffb6b51b8e058fcb51}{\index{A\-Renderable@{A\-Renderable}!has\-View@{has\-View}}
+\index{has\-View@{has\-View}!ARenderable@{A\-Renderable}}
+\subsubsection[{has\-View}]{\setlength{\rightskip}{0pt plus 5cm}bool A\-Renderable\-::has\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{classARenderable_a7975927d5e1b3cffb6b51b8e058fcb51}
+
+
+True = m\-\_\-view has meaningful render data ; False = m\-\_\-view is garbage. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classARenderable_a9385344aed3d507e828e5b20c8846f4a}{m\-\_\-view} 
+\end{DoxySeeAlso}
+
+
+Definition at line 86 of file A\-Renderable.\-h.
+
+\hypertarget{classARenderable_a6030df923c81b400e94ff1f6a9df41f8}{\index{A\-Renderable@{A\-Renderable}!m\-\_\-p\-Sprite@{m\-\_\-p\-Sprite}}
+\index{m\-\_\-p\-Sprite@{m\-\_\-p\-Sprite}!ARenderable@{A\-Renderable}}
+\subsubsection[{m\-\_\-p\-Sprite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Sprite}$\ast$ A\-Renderable\-::m\-\_\-p\-Sprite\hspace{0.3cm}{\ttfamily [protected]}}}\label{classARenderable_a6030df923c81b400e94ff1f6a9df41f8}
+
+
+This class assumes responsibility for this \hyperlink{classCSprite}{C\-Sprite} object. 
+
+
+
+Definition at line 69 of file A\-Renderable.\-h.
+
+\hypertarget{classARenderable_a9385344aed3d507e828e5b20c8846f4a}{\index{A\-Renderable@{A\-Renderable}!m\-\_\-view@{m\-\_\-view}}
+\index{m\-\_\-view@{m\-\_\-view}!ARenderable@{A\-Renderable}}
+\subsubsection[{m\-\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}sf\-::\-View A\-Renderable\-::m\-\_\-view\hspace{0.3cm}{\ttfamily [protected]}}}\label{classARenderable_a9385344aed3d507e828e5b20c8846f4a}
+
+
+A\-P\-I subsection of the world being rendered, if this \hyperlink{classARenderable}{A\-Renderable} has one. 
+
+The bool 'has\-View' controlls wheither or not this variable has meaningfull data within it, ie will be used durring rendering.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classARenderable_a7975927d5e1b3cffb6b51b8e058fcb51}{has\-View} 
+\end{DoxySeeAlso}
+
+
+Definition at line 79 of file A\-Renderable.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{ARenderable_8h}{A\-Renderable.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Abstracts/\hyperlink{ARenderable_8cpp}{A\-Renderable.\-cpp}\end{DoxyCompactItemize}
