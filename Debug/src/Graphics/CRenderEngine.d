@@ -88,6 +88,7 @@ src/Graphics/CRenderEngine.d: ../src/Graphics/CRenderEngine.cpp \
  ../src/Graphics/../Headers/IGetRenderData.h \
  ../src/Graphics/../Headers/CPlayer.h \
  ../src/Graphics/../Headers/AUserInput.h \
+ ../src/Graphics/../Headers/CPowerUp_holder.h \
  ../src/Graphics/../Headers/include_sfml.h
 
 ../src/Graphics/../Headers/CRenderEngine.h:
@@ -269,5 +270,7 @@ src/Graphics/CRenderEngine.d: ../src/Graphics/CRenderEngine.cpp \
 ../src/Graphics/../Headers/CPlayer.h:
 
 ../src/Graphics/../Headers/AUserInput.h:
+
+../src/Graphics/../Headers/CPowerUp_holder.h:
 
 ../src/Graphics/../Headers/include_sfml.h:

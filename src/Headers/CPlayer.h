@@ -42,11 +42,6 @@ public:
 
 private:
 	/**
-	 * linear movement step while a move key is down.
-	 */
-	int moveStep;
-
-	/**
 	 * Current bounds of the sprite.
 	 *
 	 * Allocated here to increase efficacy

@@ -110,8 +110,8 @@ Collaboration diagram for CPhysicsEngine:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7a2fa6ebd7e1ad0da2ab36d92ae8608"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPhysicsEngine.html#ab7a2fa6ebd7e1ad0da2ab36d92ae8608">CPhysicsEngine</a> (<a class="el" href="classCPlayer.html">CPlayer</a> *pPlayer, <a class="el" href="classCTile__Container.html">CTile_Container</a> *pTile_Container)</td></tr>
-<tr class="separator:ab7a2fa6ebd7e1ad0da2ab36d92ae8608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace75d050c06185304fde6321bac6245f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPhysicsEngine.html#ace75d050c06185304fde6321bac6245f">CPhysicsEngine</a> (<a class="el" href="classCPlayer.html">CPlayer</a> *pPlayer, <a class="el" href="classCPowerUp__holder.html">CPowerUp_holder</a> *pPowerUp_holder, <a class="el" href="classCTile__Container.html">CTile_Container</a> *pTile_Container, sf::RenderWindow *pWindow)</td></tr>
+<tr class="separator:ace75d050c06185304fde6321bac6245f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e432f93b60e9e38a8882223ea3ee71b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPhysicsEngine.html#a2e432f93b60e9e38a8882223ea3ee71b">~CPhysicsEngine</a> ()</td></tr>
 <tr class="separator:a2e432f93b60e9e38a8882223ea3ee71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc493897bbdb15e6787a25478730f1f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCPhysicsEngine.html#abc493897bbdb15e6787a25478730f1f5">update</a> ()</td></tr>
@@ -126,9 +126,9 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Module of the game engine that is responsible for: resolving collisions and updating physics data within objects. </p>
 
-<p>Definition at line <a class="el" href="CPhysicsEngine_8h_source.html#l00021">21</a> of file <a class="el" href="CPhysicsEngine_8h_source.html">CPhysicsEngine.h</a>.</p>
+<p>Definition at line <a class="el" href="CPhysicsEngine_8h_source.html#l00022">22</a> of file <a class="el" href="CPhysicsEngine_8h_source.html">CPhysicsEngine.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab7a2fa6ebd7e1ad0da2ab36d92ae8608"></a>
+<a class="anchor" id="ace75d050c06185304fde6321bac6245f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -141,8 +141,20 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classCPowerUp__holder.html">CPowerUp_holder</a> *&#160;</td>
+          <td class="paramname"><em>pPowerUp_holder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classCTile__Container.html">CTile_Container</a> *&#160;</td>
-          <td class="paramname"><em>pTile_Container</em>&#160;</td>
+          <td class="paramname"><em>pTile_Container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow *&#160;</td>
+          <td class="paramname"><em>pWindow</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -169,7 +181,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="CPhysicsEngine_8cpp_source.html#l00021">21</a> of file <a class="el" href="CPhysicsEngine_8cpp_source.html">CPhysicsEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CPhysicsEngine_8cpp_source.html#l00027">27</a> of file <a class="el" href="CPhysicsEngine_8cpp_source.html">CPhysicsEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +212,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classIUpdateable.html#a46d178a1ecdab33bcaad25d9b38582a5">IUpdateable</a>.</p>
 
-<p>Definition at line <a class="el" href="CPhysicsEngine_8cpp_source.html#l00026">26</a> of file <a class="el" href="CPhysicsEngine_8cpp_source.html">CPhysicsEngine.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CPhysicsEngine_8cpp_source.html#l00032">32</a> of file <a class="el" href="CPhysicsEngine_8cpp_source.html">CPhysicsEngine.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +223,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 18:02:22 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 20 2014 20:47:19 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

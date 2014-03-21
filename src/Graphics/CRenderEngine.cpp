@@ -11,11 +11,13 @@
 
 CRenderEngine::CRenderEngine(sf::RenderWindow* pWindow,
                              CTile_Container* pTile_Container,
-                             CPlayer* pPlayer)
+                             CPlayer* pPlayer,
+                             CPowerUp_holder* pPowerUp_holder)
 {
 	m_pWindow 			= pWindow;
 	m_pTile_Container 	= pTile_Container;
 	m_pPlayer 			= pPlayer;
+	m_pPowerUp_holder	= pPowerUp_holder;
 
 	m_pSprite = NULL;
 
@@ -42,6 +44,7 @@ void CRenderEngine::render()
 	//		can be seen by calling canBeSeen(...);
 	render_obj(&m_tiles);
 	render_obj(&m_players);
+	render_obj(&m_powerUpHolders);
 	render_UI();
 	render_HUD();
 	render_menu();
@@ -52,6 +55,9 @@ void CRenderEngine::getData()
 {
 	m_players.clear();
 	m_players.push_back(m_pPlayer);
+
+	m_powerUpHolders.clear();
+	m_powerUpHolders.push_back(m_pPowerUp_holder);
 
 	m_tiles.clear();
 	m_pTile_Container->getRenderData(&m_tiles);

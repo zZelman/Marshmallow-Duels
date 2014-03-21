@@ -22,7 +22,7 @@ Collaboration diagram for C\-Render\-Engine\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCRenderEngine_abb9a5a04b9c51e6ee44d0a51a6633d8d}{C\-Render\-Engine} (sf\-::\-Render\-Window $\ast$p\-Window, \hyperlink{classCTile__Container}{C\-Tile\-\_\-\-Container} $\ast$p\-Tile\-\_\-\-Container, \hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player)
+\hyperlink{classCRenderEngine_acae965ee0ef2ad899562a4b27b33675b}{C\-Render\-Engine} (sf\-::\-Render\-Window $\ast$p\-Window, \hyperlink{classCTile__Container}{C\-Tile\-\_\-\-Container} $\ast$p\-Tile\-\_\-\-Container, \hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player, \hyperlink{classCPowerUp__holder}{C\-Power\-Up\-\_\-holder} $\ast$p\-Power\-Up\-\_\-holder)
 \item 
 \hyperlink{classCRenderEngine_aa30932df40eda7760a6357308eb7edac}{$\sim$\-C\-Render\-Engine} ()
 \item 
@@ -38,20 +38,21 @@ Module of the game engine that is responsible for rendering all \hyperlink{class
 \end{DoxySeeAlso}
 
 
-Definition at line 25 of file C\-Render\-Engine.\-h.
+Definition at line 26 of file C\-Render\-Engine.\-h.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classCRenderEngine_abb9a5a04b9c51e6ee44d0a51a6633d8d}{\index{C\-Render\-Engine@{C\-Render\-Engine}!C\-Render\-Engine@{C\-Render\-Engine}}
+\hypertarget{classCRenderEngine_acae965ee0ef2ad899562a4b27b33675b}{\index{C\-Render\-Engine@{C\-Render\-Engine}!C\-Render\-Engine@{C\-Render\-Engine}}
 \index{C\-Render\-Engine@{C\-Render\-Engine}!CRenderEngine@{C\-Render\-Engine}}
 \subsubsection[{C\-Render\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}C\-Render\-Engine\-::\-C\-Render\-Engine (
 \begin{DoxyParamCaption}
 \item[{sf\-::\-Render\-Window $\ast$}]{p\-Window, }
 \item[{{\bf C\-Tile\-\_\-\-Container} $\ast$}]{p\-Tile\-\_\-\-Container, }
-\item[{{\bf C\-Player} $\ast$}]{p\-Player}
+\item[{{\bf C\-Player} $\ast$}]{p\-Player, }
+\item[{{\bf C\-Power\-Up\-\_\-holder} $\ast$}]{p\-Power\-Up\-\_\-holder}
 \end{DoxyParamCaption}
-)}}\label{classCRenderEngine_abb9a5a04b9c51e6ee44d0a51a6633d8d}
+)}}\label{classCRenderEngine_acae965ee0ef2ad899562a4b27b33675b}
 
 
 Definition at line 12 of file C\-Render\-Engine.\-cpp.
@@ -65,7 +66,7 @@ Definition at line 12 of file C\-Render\-Engine.\-cpp.
 )}}\label{classCRenderEngine_aa30932df40eda7760a6357308eb7edac}
 
 
-Definition at line 28 of file C\-Render\-Engine.\-cpp.
+Definition at line 30 of file C\-Render\-Engine.\-cpp.
 
 
 
@@ -83,7 +84,7 @@ Renders each \hyperlink{classARenderable}{A\-Renderable} game object, and render
 
 Priority in rendering\-: (\mbox{[}top\mbox{]} Menu, H\-U\-D, U\-I, Players, Tiles \mbox{[}bottom\mbox{]}) 
 
-Definition at line 33 of file C\-Render\-Engine.\-cpp.
+Definition at line 35 of file C\-Render\-Engine.\-cpp.
 
 
 

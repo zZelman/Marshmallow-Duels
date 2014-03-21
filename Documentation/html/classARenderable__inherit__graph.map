@@ -1,4 +1,5 @@
 <map id="ARenderable" name="ARenderable">
 <area shape="rect" id="node2" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,219,195,399"/>
-<area shape="rect" id="node3" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="219,249,300,370"/>
+<area shape="rect" id="node3" href="$classCPowerUp__holder.html" title="A floating PowerUp, ones that the player does not have yet. " alt="" coords="219,241,375,377"/>
+<area shape="rect" id="node4" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="399,249,480,370"/>
 </map>

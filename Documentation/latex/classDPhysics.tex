@@ -12,11 +12,12 @@ Base class holder of pertinent physics information within a \hyperlink{structDPh
 
 
 
-Inheritance diagram for D\-Physics\-:\nopagebreak
+Inheritance diagram for D\-Physics\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=222pt]{classDPhysics__inherit__graph}
+\includegraphics[width=350pt]{classDPhysics__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -46,6 +47,8 @@ virtual void \hyperlink{classDPhysics_a414316ffcec06dbf01ced086bbb92b55}{step\-N
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+int \hyperlink{classDPhysics_afa504c4a3f2658eb358735ed30e6c1e3}{move\-Step}
+\begin{DoxyCompactList}\small\item\em linear movement step \end{DoxyCompactList}\item 
 struct \hyperlink{structDPhysics_1_1SPhysics}{D\-Physics\-::\-S\-Physics} \hyperlink{classDPhysics_aca2940879481f0e2b892c82c5fc0da5a}{m\-\_\-s\-Physics}
 \end{DoxyCompactItemize}
 
@@ -78,7 +81,7 @@ Definition at line 11 of file D\-Physics.\-cpp.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDPhysics_aad555af54aca363984d0fcf34d044ba5}
 
 
-Definition at line 17 of file D\-Physics.\-cpp.
+Definition at line 18 of file D\-Physics.\-cpp.
 
 
 
@@ -96,7 +99,7 @@ A normal step in 1 update call.
 
 When this method is called, it is assumed that there will N\-O\-T be a collision during 1 step. 
 
-Implemented in \hyperlink{classCPlayer_aedadef185076d940923e9402a15cdf90}{C\-Player}.
+Implemented in \hyperlink{classCPlayer_aedadef185076d940923e9402a15cdf90}{C\-Player}, and \hyperlink{classCPowerUp__holder_a7897ad82d7276328c71409d9ecc27cd8}{C\-Power\-Up\-\_\-holder}.
 
 
 
@@ -104,6 +107,17 @@ Implemented in \hyperlink{classCPlayer_aedadef185076d940923e9402a15cdf90}{C\-Pla
 \hypertarget{classDPhysics_aca2940879481f0e2b892c82c5fc0da5a}{\index{D\-Physics@{D\-Physics}!m\-\_\-s\-Physics@{m\-\_\-s\-Physics}}
 \index{m\-\_\-s\-Physics@{m\-\_\-s\-Physics}!DPhysics@{D\-Physics}}
 \subsubsection[{m\-\_\-s\-Physics}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf D\-Physics\-::\-S\-Physics}  D\-Physics\-::m\-\_\-s\-Physics}}\label{classDPhysics_aca2940879481f0e2b892c82c5fc0da5a}
+\hypertarget{classDPhysics_afa504c4a3f2658eb358735ed30e6c1e3}{\index{D\-Physics@{D\-Physics}!move\-Step@{move\-Step}}
+\index{move\-Step@{move\-Step}!DPhysics@{D\-Physics}}
+\subsubsection[{move\-Step}]{\setlength{\rightskip}{0pt plus 5cm}int D\-Physics\-::move\-Step}}\label{classDPhysics_afa504c4a3f2658eb358735ed30e6c1e3}
+
+
+linear movement step 
+
+
+
+Definition at line 26 of file D\-Physics.\-h.
+
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

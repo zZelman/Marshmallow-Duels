@@ -86,7 +86,8 @@ src/Physics/CPhysicsEngine.d: ../src/Physics/CPhysicsEngine.cpp \
  ../src/Physics/../Headers/IGetCollisionData.h \
  ../src/Physics/../Headers/IGetRenderData.h \
  ../src/Physics/../Headers/CPlayer.h \
- ../src/Physics/../Headers/AUserInput.h
+ ../src/Physics/../Headers/AUserInput.h \
+ ../src/Physics/../Headers/CPowerUp_holder.h
 
 ../src/Physics/../Headers/CPhysicsEngine.h:
 
@@ -267,3 +268,5 @@ src/Physics/CPhysicsEngine.d: ../src/Physics/CPhysicsEngine.cpp \
 ../src/Physics/../Headers/CPlayer.h:
 
 ../src/Physics/../Headers/AUserInput.h:
+
+../src/Physics/../Headers/CPowerUp_holder.h:

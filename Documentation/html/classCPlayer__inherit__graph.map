@@ -3,5 +3,5 @@
 <area shape="rect" id="node3" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,189,300,296"/>
 <area shape="rect" id="node4" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="176,5,296,112"/>
 <area shape="rect" id="node5" href="$classAUserInput.html" title="Abstract class which decomposes the different types of user input. " alt="" coords="325,167,515,318"/>
-<area shape="rect" id="node6" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="539,189,657,296"/>
+<area shape="rect" id="node6" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="539,182,657,303"/>
 </map>

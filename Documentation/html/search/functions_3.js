@@ -11,5 +11,6 @@ var searchData=
   ['getsprite',['getSprite',['../classARenderable.html#a2fc0c24af527998d4d1a891ede342b8b',1,'ARenderable']]],
   ['getsprite_5fapi',['getSprite_API',['../classARenderable.html#a87845b6d223c0f8907b465cdcf48311d',1,'ARenderable']]],
   ['getsubnum',['getSubNum',['../classCTexture.html#a52a074211eaa812a91200f73f8387aca',1,'CTexture']]],
-  ['getsubsize',['getSubSize',['../classCTexture.html#a100f28379f113485d1e7574705ba977f',1,'CTexture']]]
+  ['getsubsize',['getSubSize',['../classCTexture.html#a100f28379f113485d1e7574705ba977f',1,'CTexture']]],
+  ['givepower',['givePower',['../classCPowerUp__holder.html#a4af6d4a8e15ab5e00053c94c5f328873',1,'CPowerUp_holder']]]
 ];

@@ -1,1 +1,1 @@
-Fixed horizontal collision while jumping and removed forced view on player only.
+Added a basic powerup-holder which will hold the power of the powerup to transfer to the players as well as bounce off of the window edges.

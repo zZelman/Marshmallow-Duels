@@ -10,6 +10,7 @@
 
 DPhysics::DPhysics()
 {
+	moveStep = 0;
 	m_sPhysics.nullAll();
 }
 

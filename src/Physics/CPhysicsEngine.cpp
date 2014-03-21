@@ -9,11 +9,17 @@
 #include <iostream>
 
 CPhysicsEngine::CPhysicsEngine(CPlayer* pPlayer,
-                               CTile_Container* pTile_Container)
+                               CPowerUp_holder* pPowerUp_holder,
+                               CTile_Container* pTile_Container,
+                               sf::RenderWindow* pWindow)
 {
 	m_pTile_Container = pTile_Container;
 
 	m_pPlayer = pPlayer;
+
+	m_pPowerUp_holder = pPowerUp_holder;
+
+	m_pWindow = pWindow;
 
 }
 
@@ -41,21 +47,45 @@ void CPhysicsEngine::n2_collision()
 	std::list<ARenderable*> players;
 	players.push_back(m_pPlayer);
 
+	std::list<ARenderable*> powerUp_holders;
+	powerUp_holders.push_back(m_pPowerUp_holder);
+
 	CTile* pTile = NULL;
 	CPlayer* pPlayer = NULL;
-	bool canStepNormally = true;
+	CPowerUp_holder* pPowerUp_holder = NULL;
+	bool canStepNormally_player = true;
 	std::list<DPhysics*> normals; // objects that can step normally
 
 
+	// POWERUP_HOLDER -> WINDOW EDGE
+	for (std::list<ARenderable*>::iterator itr_powerUp_holder = powerUp_holders.begin();
+	        itr_powerUp_holder != powerUp_holders.end();
+	        ++itr_powerUp_holder)
+	{
+		pPowerUp_holder = dynamic_cast<CPowerUp_holder*>(*itr_powerUp_holder);
+
+		if (powerUpHolder_window(pPowerUp_holder) == true)
+		{
+			std::cout << "powerUpHolder_window" << std::endl;
+		}
+		else
+		{
+			normals.push_front(pPowerUp_holder);
+		}
+	}
+
+
+	// PLAYER -> *
 	for (std::list<ARenderable*>::iterator itr_players = players.begin();
 	        itr_players != players.end();
 	        ++itr_players)
 	{
-		canStepNormally = true;
+		canStepNormally_player = true;
 
 		pPlayer = dynamic_cast<CPlayer*>(*itr_players);
 		applyPhysics(pPlayer);
 
+		// PLAYER -> TILE
 		for (std::list<ARenderable*>::iterator itr_tiles = tiles.begin();
 		        itr_tiles != tiles.end();
 		        ++itr_tiles)
@@ -64,12 +94,25 @@ void CPhysicsEngine::n2_collision()
 
 			if (player_tile(pPlayer, pTile) == true)
 			{
-				canStepNormally = false;
+				canStepNormally_player = false;
 				break;
 			}
 		}
 
-		if (canStepNormally == true)
+		// PLAYER -> POWERUP_HOLDER
+		for (std::list<ARenderable*>::iterator itr_powerUp_holder = powerUp_holders.begin();
+		        itr_powerUp_holder != powerUp_holders.end();
+		        ++itr_powerUp_holder)
+		{
+			pPowerUp_holder = dynamic_cast<CPowerUp_holder*>(*itr_powerUp_holder);
+
+			if (player_powerUpHolder(pPlayer, pPowerUp_holder) == true)
+			{
+				std::cout << "player_powerUpHolder" << std::endl;
+			}
+		}
+
+		if (canStepNormally_player == true)
 		{
 			normals.push_front(pPlayer);
 
@@ -184,6 +227,79 @@ bool CPhysicsEngine::player_tile(CPlayer* pPlayer, CTile* pTile)
 		physicsData.isCollision_h = false;
 	}
 
+
+	return isCollision;
+}
+
+
+bool CPhysicsEngine::player_powerUpHolder(CPlayer* pPlayer,
+        CPowerUp_holder* pHolder)
+{
+	sf::FloatRect playerR = pPlayer->getGlobalBounds();
+	sf::FloatRect holderR = pHolder->getGlobalBounds();
+
+	if (holderR.intersects(playerR))
+	{
+		return true;
+	}
+
+	return false;
+}
+
+
+bool CPhysicsEngine::powerUpHolder_window(CPowerUp_holder* pHolder)
+{
+	sf::FloatRect currRect 		= pHolder->getGlobalBounds();
+	sf::FloatRect futureRect_v 	= pHolder->getGlobalBounds(); // vertical future
+	sf::FloatRect futureRect_h 	= pHolder->getGlobalBounds(); // horizontal future
+	sf::Vector2u windowSize = m_pWindow->getSize();
+
+	int newY = currRect.top;
+	int newX = currRect.left;
+
+	DPhysics::SPhysics& physicsData = pHolder->m_sPhysics;
+
+	int& velY = physicsData.velosity_y;
+	int& velX = physicsData.velosity_x;
+
+	futureRect_v.top  += velY;
+	futureRect_h.left += velX;
+
+	bool isCollision = false;
+
+	// left side of window
+	if (futureRect_h.left < 0)
+	{
+		newX = 0;
+		velX = -velX;
+		isCollision = true;
+	}
+	// right side of window
+	else if ((futureRect_h.left + currRect.width) > windowSize.x)
+	{
+		newX = windowSize.x - currRect.width;
+		velX = -velX;
+		isCollision = true;
+	}
+
+	// top of window
+	if (futureRect_v.top < 0)
+	{
+		newY = 0;
+		velY = -velY;
+		isCollision = true;
+	}
+	else if ((futureRect_v.top + currRect.height) > windowSize.y)
+	{
+		newY = windowSize.y - currRect.height;
+		velY = -velY;
+		isCollision = true;
+	}
+
+	if (isCollision)
+	{
+		pHolder->setPosition(newX, newY);
+	}
 
 	return isCollision;
 }

@@ -12,6 +12,7 @@
 #include "ARenderable.h"
 #include "CTile_Container.h"
 #include "CPlayer.h"
+#include "CPowerUp_holder.h"
 
 #include <list>
 
@@ -27,7 +28,8 @@ class CRenderEngine
 public:
 	CRenderEngine(sf::RenderWindow* pWindow,
 	              CTile_Container* pTile_Container,
-	              CPlayer* pPlayer);
+	              CPlayer* pPlayer,
+	              CPowerUp_holder* pPowerUp_holder);
 	~CRenderEngine();
 
 	/**
@@ -71,6 +73,9 @@ private:
 	 * with the individual tiles within the tile container
 	 */
 	std::list<ARenderable*> m_tiles;
+
+	CPowerUp_holder* m_pPowerUp_holder;
+	std::list<ARenderable*> m_powerUpHolders;
 
 	/**
 	 * Current sprite being rendered.

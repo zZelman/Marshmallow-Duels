@@ -13,6 +13,7 @@
 
 #include "IUpdateable.h"
 #include "DPhysics.h"
+#include "CPowerUp_holder.h"
 
 /**
  * Module of the game engine that is responsible for: resolving collisions and
@@ -22,7 +23,9 @@ class CPhysicsEngine : public IUpdateable
 {
 public:
 	CPhysicsEngine(CPlayer* pPlayer,
-	               CTile_Container* pTile_Container);
+	               CPowerUp_holder* pPowerUp_holder,
+	               CTile_Container* pTile_Container,
+	               sf::RenderWindow* pWindow);
 	~CPhysicsEngine();
 
 
@@ -40,6 +43,10 @@ private:
 
 	CPlayer* m_pPlayer;
 
+	CPowerUp_holder* m_pPowerUp_holder;
+
+	sf::RenderWindow* m_pWindow;
+
 	/**
 	 * fast and easy O(n^2) collision detection
 	 */
@@ -51,9 +58,26 @@ private:
 	 *
 	 * Naming scheme is "this collides with that" (player -> tile == player_tile)
 	 *
-	 * @return true if collision
+	 * @return true if collision && therefore resolution
 	 */
 	bool player_tile(CPlayer* pPlayer, CTile* pTile);
+
+	/**
+	 * A potential collision has been found between these two given pointers by
+	 * the calling function, it is resolved here.
+	 *
+	 * Naming scheme is "this collides with that" (player -> tile == player_tile)
+	 *
+	 * @return true if collision
+	 */
+	bool player_powerUpHolder(CPlayer* pPlayer, CPowerUp_holder* pHolder);
+
+	/**
+	 * The behavior of holders is simply to bounce off of the window edges.
+	 *
+	 * @return true if rebound has occurred.
+	 */
+	bool powerUpHolder_window(CPowerUp_holder* pHolder);
 
 
 	/**

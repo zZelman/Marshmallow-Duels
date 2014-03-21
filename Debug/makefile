@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include src/UI/subdir.mk
 -include src/Tiles/subdir.mk
+-include src/PowerUps/subdir.mk
 -include src/Players/subdir.mk
 -include src/Physics/subdir.mk
 -include src/Interfaces/subdir.mk

@@ -1,5 +1,6 @@
 <map id="AUpdate" name="AUpdate">
 <area shape="rect" id="node3" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,315,195,495"/>
-<area shape="rect" id="node4" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="219,345,300,466"/>
-<area shape="rect" id="node2" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="120,5,240,112"/>
+<area shape="rect" id="node4" href="$classCPowerUp__holder.html" title="A floating PowerUp, ones that the player does not have yet. " alt="" coords="219,337,375,473"/>
+<area shape="rect" id="node5" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="399,345,480,466"/>
+<area shape="rect" id="node2" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="237,5,357,112"/>
 </map>

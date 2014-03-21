@@ -31,7 +31,7 @@ Collaboration diagram for C\-Physics\-Engine\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classCPhysicsEngine_ab7a2fa6ebd7e1ad0da2ab36d92ae8608}{C\-Physics\-Engine} (\hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player, \hyperlink{classCTile__Container}{C\-Tile\-\_\-\-Container} $\ast$p\-Tile\-\_\-\-Container)
+\hyperlink{classCPhysicsEngine_ace75d050c06185304fde6321bac6245f}{C\-Physics\-Engine} (\hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player, \hyperlink{classCPowerUp__holder}{C\-Power\-Up\-\_\-holder} $\ast$p\-Power\-Up\-\_\-holder, \hyperlink{classCTile__Container}{C\-Tile\-\_\-\-Container} $\ast$p\-Tile\-\_\-\-Container, sf\-::\-Render\-Window $\ast$p\-Window)
 \item 
 \hyperlink{classCPhysicsEngine_a2e432f93b60e9e38a8882223ea3ee71b}{$\sim$\-C\-Physics\-Engine} ()
 \item 
@@ -42,19 +42,21 @@ void \hyperlink{classCPhysicsEngine_abc493897bbdb15e6787a25478730f1f5}{update} (
 \subsection{Detailed Description}
 Module of the game engine that is responsible for\-: resolving collisions and updating physics data within objects. 
 
-Definition at line 21 of file C\-Physics\-Engine.\-h.
+Definition at line 22 of file C\-Physics\-Engine.\-h.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classCPhysicsEngine_ab7a2fa6ebd7e1ad0da2ab36d92ae8608}{\index{C\-Physics\-Engine@{C\-Physics\-Engine}!C\-Physics\-Engine@{C\-Physics\-Engine}}
+\hypertarget{classCPhysicsEngine_ace75d050c06185304fde6321bac6245f}{\index{C\-Physics\-Engine@{C\-Physics\-Engine}!C\-Physics\-Engine@{C\-Physics\-Engine}}
 \index{C\-Physics\-Engine@{C\-Physics\-Engine}!CPhysicsEngine@{C\-Physics\-Engine}}
 \subsubsection[{C\-Physics\-Engine}]{\setlength{\rightskip}{0pt plus 5cm}C\-Physics\-Engine\-::\-C\-Physics\-Engine (
 \begin{DoxyParamCaption}
 \item[{{\bf C\-Player} $\ast$}]{p\-Player, }
-\item[{{\bf C\-Tile\-\_\-\-Container} $\ast$}]{p\-Tile\-\_\-\-Container}
+\item[{{\bf C\-Power\-Up\-\_\-holder} $\ast$}]{p\-Power\-Up\-\_\-holder, }
+\item[{{\bf C\-Tile\-\_\-\-Container} $\ast$}]{p\-Tile\-\_\-\-Container, }
+\item[{sf\-::\-Render\-Window $\ast$}]{p\-Window}
 \end{DoxyParamCaption}
-)}}\label{classCPhysicsEngine_ab7a2fa6ebd7e1ad0da2ab36d92ae8608}
+)}}\label{classCPhysicsEngine_ace75d050c06185304fde6321bac6245f}
 
 
 Definition at line 11 of file C\-Physics\-Engine.\-cpp.
@@ -68,7 +70,7 @@ Definition at line 11 of file C\-Physics\-Engine.\-cpp.
 )}}\label{classCPhysicsEngine_a2e432f93b60e9e38a8882223ea3ee71b}
 
 
-Definition at line 21 of file C\-Physics\-Engine.\-cpp.
+Definition at line 27 of file C\-Physics\-Engine.\-cpp.
 
 
 
@@ -90,7 +92,7 @@ Implements \hyperlink{classIUpdateable_a46d178a1ecdab33bcaad25d9b38582a5}{I\-Upd
 
 
 
-Definition at line 26 of file C\-Physics\-Engine.\-cpp.
+Definition at line 32 of file C\-Physics\-Engine.\-cpp.
 
 
 

@@ -1,0 +1,6 @@
+<map id="CPowerUp_holder" name="CPowerUp_holder">
+<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,160,147,325"/>
+<area shape="rect" id="node3" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,189,300,296"/>
+<area shape="rect" id="node4" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="176,5,296,112"/>
+<area shape="rect" id="node5" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="325,182,443,303"/>
+</map>

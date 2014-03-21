@@ -21,6 +21,11 @@ public:
 	virtual ~DPhysics();
 
 	/**
+	 * linear movement step
+	 */
+	int moveStep;
+
+	/**
 	 * Physics data
 	 */
 	struct SPhysics

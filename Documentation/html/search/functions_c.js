@@ -6,6 +6,7 @@ var searchData=
   ['_7ecgame',['~CGame',['../classCGame.html#a4db10c09035dc16b32d6c1ef4cca2143',1,'CGame']]],
   ['_7ecphysicsengine',['~CPhysicsEngine',['../classCPhysicsEngine.html#a2e432f93b60e9e38a8882223ea3ee71b',1,'CPhysicsEngine']]],
   ['_7ecplayer',['~CPlayer',['../classCPlayer.html#ad02df04887bccfe3b82298895da24af6',1,'CPlayer']]],
+  ['_7ecpowerup_5fholder',['~CPowerUp_holder',['../classCPowerUp__holder.html#a41dab90c6479557756af37483fd19232',1,'CPowerUp_holder']]],
   ['_7ecrenderengine',['~CRenderEngine',['../classCRenderEngine.html#aa30932df40eda7760a6357308eb7edac',1,'CRenderEngine']]],
   ['_7ecsprite',['~CSprite',['../classCSprite.html#a274146d807d98947cff67621e783d31d',1,'CSprite']]],
   ['_7ectile',['~CTile',['../classCTile.html#ac57f4f936e612edf8fc825d91912640a',1,'CTile']]],

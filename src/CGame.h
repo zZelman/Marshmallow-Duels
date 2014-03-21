@@ -19,6 +19,8 @@
 
 #include "Headers/CPhysicsEngine.h"
 
+#include "Headers/CPowerUp_holder.h"
+
 /**
  * Host of game-loop and program flow therein, also handles SFML "system" events.
  */
@@ -55,7 +57,10 @@ private:
 	 *
 	 * This will only exist as long as the simple example does
 	 */
-	CTexture* m_pTexture;
+	CTexture* m_pTexture_player;
+
+	CPowerUp_holder* m_pPowerUp_holder;
+	CTexture* m_pTexture_powerUpHolder;
 
 	/**
 	 * Container of each individual tile in the world

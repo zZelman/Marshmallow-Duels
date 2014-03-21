@@ -83,9 +83,10 @@ src/CGame.d: ../src/CGame.cpp ../src/CGame.h \
  ../src/Headers/CTile.h ../src/Headers/AUpdate.h \
  ../src/Headers/DPhysics.h ../src/Headers/IGetCollisionData.h \
  ../src/Headers/IGetRenderData.h ../src/Headers/CPlayer.h \
- ../src/Headers/AUserInput.h ../src/Headers/include_graphics.h \
- ../src/Headers/CUI.h ../src/Headers/CTile_Container.h \
- ../src/Headers/CPhysicsEngine.h
+ ../src/Headers/AUserInput.h ../src/Headers/CPowerUp_holder.h \
+ ../src/Headers/include_graphics.h ../src/Headers/CUI.h \
+ ../src/Headers/CTile_Container.h ../src/Headers/CPhysicsEngine.h \
+ ../src/Headers/CPowerUp_holder.h
 
 ../src/CGame.h:
 
@@ -271,6 +272,8 @@ src/CGame.d: ../src/CGame.cpp ../src/CGame.h \
 
 ../src/Headers/AUserInput.h:
 
+../src/Headers/CPowerUp_holder.h:
+
 ../src/Headers/include_graphics.h:
 
 ../src/Headers/CUI.h:
@@ -278,3 +281,5 @@ src/CGame.d: ../src/CGame.cpp ../src/CGame.h \
 ../src/Headers/CTile_Container.h:
 
 ../src/Headers/CPhysicsEngine.h:
+
+../src/Headers/CPowerUp_holder.h:

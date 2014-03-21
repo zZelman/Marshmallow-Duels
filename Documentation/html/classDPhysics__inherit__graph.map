@@ -1,3 +1,4 @@
 <map id="DPhysics" name="DPhysics">
-<area shape="rect" id="node2" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,161,195,341"/>
+<area shape="rect" id="node2" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,177,195,357"/>
+<area shape="rect" id="node3" href="$classCPowerUp__holder.html" title="A floating PowerUp, ones that the player does not have yet. " alt="" coords="219,199,375,335"/>
 </map>

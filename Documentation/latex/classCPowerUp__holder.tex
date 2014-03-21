@@ -1,0 +1,141 @@
+\hypertarget{classCPowerUp__holder}{\section{C\-Power\-Up\-\_\-holder Class Reference}
+\label{classCPowerUp__holder}\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}}
+}
+
+
+A floating Power\-Up, ones that the player does not have yet.  
+
+
+
+
+{\ttfamily \#include $<$C\-Power\-Up\-\_\-holder.\-h$>$}
+
+
+
+Inheritance diagram for C\-Power\-Up\-\_\-holder\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCPowerUp__holder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Power\-Up\-\_\-holder\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCPowerUp__holder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCPowerUp__holder_ab7c2b4530e8f7ebffcdafd5fcc4b2c95}{C\-Power\-Up\-\_\-holder} (\hyperlink{classCTexture}{C\-Texture} $\ast$p\-Texture, const sf\-::\-Vector2$<$ int $>$ \&curr\-Sub, const sf\-::\-Vector2$<$ int $>$ \&spawn\-Pos, const sf\-::\-Vector2$<$ int $>$ \&spawn\-Speeds)
+\item 
+virtual \hyperlink{classCPowerUp__holder_a41dab90c6479557756af37483fd19232}{$\sim$\-C\-Power\-Up\-\_\-holder} ()
+\item 
+void \hyperlink{classCPowerUp__holder_a4af6d4a8e15ab5e00053c94c5f328873}{give\-Power} (\hyperlink{classCPlayer}{C\-Player} $\ast$p\-Player)
+\begin{DoxyCompactList}\small\item\em Collision between this Power\-Up and the given \hyperlink{classCPlayer}{C\-Player} has occurred, therefore this gives responsibility of the power to the player. \end{DoxyCompactList}\item 
+void \hyperlink{classCPowerUp__holder_a328fb121f8134feaa10db9db7bd3838b}{update} ()
+\begin{DoxyCompactList}\small\item\em Function to update object state each update cycle. \end{DoxyCompactList}\item 
+void \hyperlink{classCPowerUp__holder_a7897ad82d7276328c71409d9ecc27cd8}{step\-Normally} ()
+\begin{DoxyCompactList}\small\item\em A normal step in 1 update call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A floating Power\-Up, ones that the player does not have yet. 
+
+Acts like a container for the power of the power up, and thus uses a has-\/a relationship. 
+
+Definition at line 17 of file C\-Power\-Up\-\_\-holder.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCPowerUp__holder_ab7c2b4530e8f7ebffcdafd5fcc4b2c95}{\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}!C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}}
+\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}!CPowerUp_holder@{C\-Power\-Up\-\_\-holder}}
+\subsubsection[{C\-Power\-Up\-\_\-holder}]{\setlength{\rightskip}{0pt plus 5cm}C\-Power\-Up\-\_\-holder\-::\-C\-Power\-Up\-\_\-holder (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Texture} $\ast$}]{p\-Texture, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{curr\-Sub, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{spawn\-Pos, }
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{spawn\-Speeds}
+\end{DoxyParamCaption}
+)}}\label{classCPowerUp__holder_ab7c2b4530e8f7ebffcdafd5fcc4b2c95}
+
+
+Definition at line 3 of file C\-Power\-Up\-\_\-holder.\-cpp.
+
+\hypertarget{classCPowerUp__holder_a41dab90c6479557756af37483fd19232}{\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}!$\sim$\-C\-Power\-Up\-\_\-holder@{$\sim$\-C\-Power\-Up\-\_\-holder}}
+\index{$\sim$\-C\-Power\-Up\-\_\-holder@{$\sim$\-C\-Power\-Up\-\_\-holder}!CPowerUp_holder@{C\-Power\-Up\-\_\-holder}}
+\subsubsection[{$\sim$\-C\-Power\-Up\-\_\-holder}]{\setlength{\rightskip}{0pt plus 5cm}C\-Power\-Up\-\_\-holder\-::$\sim$\-C\-Power\-Up\-\_\-holder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPowerUp__holder_a41dab90c6479557756af37483fd19232}
+
+
+Definition at line 13 of file C\-Power\-Up\-\_\-holder.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCPowerUp__holder_a4af6d4a8e15ab5e00053c94c5f328873}{\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}!give\-Power@{give\-Power}}
+\index{give\-Power@{give\-Power}!CPowerUp_holder@{C\-Power\-Up\-\_\-holder}}
+\subsubsection[{give\-Power}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Power\-Up\-\_\-holder\-::give\-Power (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-Player} $\ast$}]{p\-Player}
+\end{DoxyParamCaption}
+)}}\label{classCPowerUp__holder_a4af6d4a8e15ab5e00053c94c5f328873}
+
+
+Collision between this Power\-Up and the given \hyperlink{classCPlayer}{C\-Player} has occurred, therefore this gives responsibility of the power to the player. 
+
+\hypertarget{classCPowerUp__holder_a7897ad82d7276328c71409d9ecc27cd8}{\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}!step\-Normally@{step\-Normally}}
+\index{step\-Normally@{step\-Normally}!CPowerUp_holder@{C\-Power\-Up\-\_\-holder}}
+\subsubsection[{step\-Normally}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Power\-Up\-\_\-holder\-::step\-Normally (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPowerUp__holder_a7897ad82d7276328c71409d9ecc27cd8}
+
+
+A normal step in 1 update call. 
+
+When this method is called, it is assumed that there will N\-O\-T be a collision during 1 step. 
+
+Implements \hyperlink{classDPhysics_a414316ffcec06dbf01ced086bbb92b55}{D\-Physics}.
+
+
+
+Definition at line 23 of file C\-Power\-Up\-\_\-holder.\-cpp.
+
+\hypertarget{classCPowerUp__holder_a328fb121f8134feaa10db9db7bd3838b}{\index{C\-Power\-Up\-\_\-holder@{C\-Power\-Up\-\_\-holder}!update@{update}}
+\index{update@{update}!CPowerUp_holder@{C\-Power\-Up\-\_\-holder}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Power\-Up\-\_\-holder\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPowerUp__holder_a328fb121f8134feaa10db9db7bd3838b}
+
+
+Function to update object state each update cycle. 
+
+
+
+Implements \hyperlink{classAUpdate_a9f5be387e467fc5eea7fc45882abd949}{A\-Update}.
+
+
+
+Definition at line 18 of file C\-Power\-Up\-\_\-holder.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CPowerUp__holder_8h}{C\-Power\-Up\-\_\-holder.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Power\-Ups/\hyperlink{CPowerUp__holder_8cpp}{C\-Power\-Up\-\_\-holder.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="CPowerUp_holder" name="CPowerUp_holder">
+<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,349,147,515"/>
+<area shape="rect" id="node3" href="$classCSprite.html" title="Wrapper class for SFML 2.1 Sprite. " alt="" coords="17,141,135,277"/>
+<area shape="rect" id="node5" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,379,300,485"/>
+<area shape="rect" id="node6" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="173,156,293,263"/>
+<area shape="rect" id="node7" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="329,379,447,485"/>
+<area shape="rect" id="node8" href="$structDPhysics_1_1SPhysics.html" title="Physics data. " alt="" coords="318,134,460,285"/>
+</map>

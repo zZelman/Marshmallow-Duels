@@ -26,6 +26,7 @@ SUBDIRS := \
 src \
 src/UI \
 src/Tiles \
+src/PowerUps \
 src/Players \
 src/Physics \
 src/Interfaces \
