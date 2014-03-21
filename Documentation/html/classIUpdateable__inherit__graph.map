@@ -1,8 +1,9 @@
 <map id="IUpdateable" name="IUpdateable">
 <area shape="rect" id="node2" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="233,219,361,325"/>
 <area shape="rect" id="node6" href="$classCPhysicsEngine.html" title="Module of the game engine that is responsible for: resolving collisions and updating physics data wit..." alt="" coords="387,219,533,325"/>
-<area shape="rect" id="node7" href="$classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="557,160,701,384"/>
-<area shape="rect" id="node8" href="$classCUI.html" title="&#39;Parses&#39; user events, as well as keeps Bookkeeping information on several user states. " alt="" coords="726,189,916,355"/>
+<area shape="rect" id="node7" href="$classCPowerUp__Container.html" title="Container for all Power Ups; Active, Holders, and Passive. " alt="" coords="558,204,735,340"/>
+<area shape="rect" id="node8" href="$classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="760,160,904,384"/>
+<area shape="rect" id="node9" href="$classCUI.html" title="&#39;Parses&#39; user events, as well as keeps Bookkeeping information on several user states. " alt="" coords="929,189,1119,355"/>
 <area shape="rect" id="node3" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="5,433,195,613"/>
 <area shape="rect" id="node4" href="$classCPowerUp__holder.html" title="A floating PowerUp, ones that the player does not have yet. " alt="" coords="219,455,375,591"/>
 <area shape="rect" id="node5" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="399,462,480,583"/>

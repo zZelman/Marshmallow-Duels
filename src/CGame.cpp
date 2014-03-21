@@ -13,24 +13,17 @@ CGame::CGame()
 	                                 sf::Vector2<int>(2, 2));
 	m_pPlayer = new CPlayer(m_pTexture_player, sf::Vector2<int>(1, 1));
 
-	m_pTexture_powerUpHolder = new CTexture("res/Power Ups/debug_holder (20x20, 1x1).png",
-	                                        sf::Vector2<int>(20, 20),
-	                                        sf::Vector2<int>(1, 1));
-	m_pPowerUp_holder = new CPowerUp_holder(m_pTexture_powerUpHolder,
-	                                        sf::Vector2<int>(1, 1),
-	                                        sf::Vector2<int>(20, 20),
-	                                        sf::Vector2<int>(4, 5));
-
-
 	m_pTile_Container = new CTile_Container("simple map.tmx");
 
+	m_pPowerUp_Container = new CPowerUp_Container();
+
 	m_pRenderEngine = new CRenderEngine(m_pWindow, m_pTile_Container, m_pPlayer,
-	                                    m_pPowerUp_holder);
+	                                    m_pPowerUp_Container);
 
 	m_pUI = new CUI(m_pPlayer);
 
 	m_pPhysicsEngine = new CPhysicsEngine(m_pPlayer,
-	                                      m_pPowerUp_holder,
+	                                      m_pPowerUp_Container,
 	                                      m_pTile_Container,
 	                                      m_pWindow);
 
@@ -60,6 +53,12 @@ CGame::~CGame()
 
 	delete m_pPlayer;
 	m_pPlayer = NULL;
+
+	delete m_pTile_Container;
+	m_pTile_Container = NULL;
+
+	delete m_pPowerUp_Container;
+	m_pPowerUp_Container = NULL;
 
 	delete m_pRenderEngine;
 	m_pRenderEngine = NULL;
@@ -248,7 +247,7 @@ void CGame::update()
 
 	m_pPlayer->update();
 
-	m_pPowerUp_holder->update();
+	m_pPowerUp_Container->update();
 }
 
 

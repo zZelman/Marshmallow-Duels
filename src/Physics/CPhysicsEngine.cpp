@@ -9,7 +9,7 @@
 #include <iostream>
 
 CPhysicsEngine::CPhysicsEngine(CPlayer* pPlayer,
-                               CPowerUp_holder* pPowerUp_holder,
+                               CPowerUp_Container* pPowerUp_Container,
                                CTile_Container* pTile_Container,
                                sf::RenderWindow* pWindow)
 {
@@ -17,7 +17,7 @@ CPhysicsEngine::CPhysicsEngine(CPlayer* pPlayer,
 
 	m_pPlayer = pPlayer;
 
-	m_pPowerUp_holder = pPowerUp_holder;
+	m_pPowerUp_Container = pPowerUp_Container;
 
 	m_pWindow = pWindow;
 
@@ -42,13 +42,13 @@ void CPhysicsEngine::n2_collision()
 //	          << "jump: " << m_pPlayer->m_sPhysics.isJumping << std::endl << std::endl;
 
 	std::list<ARenderable*> tiles;
-	m_pTile_Container->getCollisiondata(&tiles);
+	m_pTile_Container->getCollisionData(&tiles);
 
 	std::list<ARenderable*> players;
 	players.push_back(m_pPlayer);
 
-	std::list<ARenderable*> powerUp_holders;
-	powerUp_holders.push_back(m_pPowerUp_holder);
+	std::list<ARenderable*> powerUps;
+	m_pPowerUp_Container->getCollisionData(&powerUps);
 
 	CTile* pTile = NULL;
 	CPlayer* pPlayer = NULL;
@@ -58,8 +58,8 @@ void CPhysicsEngine::n2_collision()
 
 
 	// POWERUP_HOLDER -> WINDOW EDGE
-	for (std::list<ARenderable*>::iterator itr_powerUp_holder = powerUp_holders.begin();
-	        itr_powerUp_holder != powerUp_holders.end();
+	for (std::list<ARenderable*>::iterator itr_powerUp_holder = powerUps.begin();
+	        itr_powerUp_holder != powerUps.end();
 	        ++itr_powerUp_holder)
 	{
 		pPowerUp_holder = dynamic_cast<CPowerUp_holder*>(*itr_powerUp_holder);
@@ -100,8 +100,8 @@ void CPhysicsEngine::n2_collision()
 		}
 
 		// PLAYER -> POWERUP_HOLDER
-		for (std::list<ARenderable*>::iterator itr_powerUp_holder = powerUp_holders.begin();
-		        itr_powerUp_holder != powerUp_holders.end();
+		for (std::list<ARenderable*>::iterator itr_powerUp_holder = powerUps.begin();
+		        itr_powerUp_holder != powerUps.end();
 		        ++itr_powerUp_holder)
 		{
 			pPowerUp_holder = dynamic_cast<CPowerUp_holder*>(*itr_powerUp_holder);

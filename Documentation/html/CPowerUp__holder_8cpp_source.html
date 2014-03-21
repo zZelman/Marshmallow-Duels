@@ -106,22 +106,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classCPowerUp__holder.html#a328fb121f8134feaa10db9db7bd3838b">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCPowerUp__holder.html#a328fb121f8134feaa10db9db7bd3838b">CPowerUp_holder::update</a>()</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCPowerUp__holder.html#a7897ad82d7276328c71409d9ecc27cd8">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCPowerUp__holder.html#a7897ad82d7276328c71409d9ecc27cd8">CPowerUp_holder::stepNormally</a>()</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// vertical</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> stepSize_y = <a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">velosity_y</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// horizontal</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> stepSize_x = <a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a2654e1fd65ea35fe4119c7866fd46274">velosity_x</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classARenderable.html#a6030df923c81b400e94ff1f6a9df41f8">m_pSprite</a>-&gt;move(stepSize_x, stepSize_y);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="ttc" id="classCPowerUp__holder_html_a7897ad82d7276328c71409d9ecc27cd8"><div class="ttname"><a href="classCPowerUp__holder.html#a7897ad82d7276328c71409d9ecc27cd8">CPowerUp_holder::stepNormally</a></div><div class="ttdeci">void stepNormally()</div><div class="ttdoc">A normal step in 1 update call. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8cpp_source.html#l00023">CPowerUp_holder.cpp:23</a></div></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classAUpdate.html#adf0a017c2fd5abd12f64f7f0fd992e66">m_isFirstUpdate</a>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#aee2f0f80a53a905eb9de32d3bb12e318">gravityTimer</a>.restart();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classAUpdate.html#adf0a017c2fd5abd12f64f7f0fd992e66">m_isFirstUpdate</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCPowerUp__holder.html#a7897ad82d7276328c71409d9ecc27cd8">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classCPowerUp__holder.html#a7897ad82d7276328c71409d9ecc27cd8">CPowerUp_holder::stepNormally</a>()</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// vertical</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> stepSize_y = <a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">velosity_y</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// horizontal</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> stepSize_x = <a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a2654e1fd65ea35fe4119c7866fd46274">velosity_x</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classARenderable.html#a6030df923c81b400e94ff1f6a9df41f8">m_pSprite</a>-&gt;move(stepSize_x, stepSize_y);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="ttc" id="classCPowerUp__holder_html_a7897ad82d7276328c71409d9ecc27cd8"><div class="ttname"><a href="classCPowerUp__holder.html#a7897ad82d7276328c71409d9ecc27cd8">CPowerUp_holder::stepNormally</a></div><div class="ttdeci">void stepNormally()</div><div class="ttdoc">A normal step in 1 update call. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8cpp_source.html#l00030">CPowerUp_holder.cpp:30</a></div></div>
 <div class="ttc" id="classDPhysics_html_aca2940879481f0e2b892c82c5fc0da5a"><div class="ttname"><a href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">DPhysics::m_sPhysics</a></div><div class="ttdeci">struct DPhysics::SPhysics m_sPhysics</div></div>
 <div class="ttc" id="classAUpdate_html"><div class="ttname"><a href="classAUpdate.html">AUpdate</a></div><div class="ttdoc">Wrapper class to IUpdatable which only adds 1 variable. </div><div class="ttdef"><b>Definition:</b> <a href="AUpdate_8h_source.html#l00018">AUpdate.h:18</a></div></div>
+<div class="ttc" id="classAUpdate_html_adf0a017c2fd5abd12f64f7f0fd992e66"><div class="ttname"><a href="classAUpdate.html#adf0a017c2fd5abd12f64f7f0fd992e66">AUpdate::m_isFirstUpdate</a></div><div class="ttdeci">bool m_isFirstUpdate</div><div class="ttdoc">Boolean to keep track of first-time update cycles. </div><div class="ttdef"><b>Definition:</b> <a href="AUpdate_8h_source.html#l00034">AUpdate.h:34</a></div></div>
 <div class="ttc" id="classARenderable_html"><div class="ttname"><a href="classARenderable.html">ARenderable</a></div><div class="ttdoc">An abstract base class for all things that can be rendered. </div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8h_source.html#l00022">ARenderable.h:22</a></div></div>
 <div class="ttc" id="classARenderable_html_a6030df923c81b400e94ff1f6a9df41f8"><div class="ttname"><a href="classARenderable.html#a6030df923c81b400e94ff1f6a9df41f8">ARenderable::m_pSprite</a></div><div class="ttdeci">CSprite * m_pSprite</div><div class="ttdoc">This class assumes responsibility for this CSprite object. </div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8h_source.html#l00066">ARenderable.h:66</a></div></div>
 <div class="ttc" id="classCPowerUp__holder_html_a41dab90c6479557756af37483fd19232"><div class="ttname"><a href="classCPowerUp__holder.html#a41dab90c6479557756af37483fd19232">CPowerUp_holder::~CPowerUp_holder</a></div><div class="ttdeci">virtual ~CPowerUp_holder()</div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8cpp_source.html#l00013">CPowerUp_holder.cpp:13</a></div></div>
@@ -131,10 +139,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structDPhysics_1_1SPhysics_html_a58c1f8fa61d0aeece450d7ab789c5013"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">DPhysics::SPhysics::velosity_y</a></div><div class="ttdeci">int velosity_y</div><div class="ttdoc">Velocity on the y axis. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00040">DPhysics.h:40</a></div></div>
 <div class="ttc" id="classCPowerUp__holder_html_a328fb121f8134feaa10db9db7bd3838b"><div class="ttname"><a href="classCPowerUp__holder.html#a328fb121f8134feaa10db9db7bd3838b">CPowerUp_holder::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Function to update object state each update cycle. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8cpp_source.html#l00018">CPowerUp_holder.cpp:18</a></div></div>
 <div class="ttc" id="classDPhysics_html"><div class="ttname"><a href="classDPhysics.html">DPhysics</a></div><div class="ttdoc">Base class holder of pertinent physics information within a SPhysics. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00017">DPhysics.h:17</a></div></div>
+<div class="ttc" id="structDPhysics_1_1SPhysics_html_aee2f0f80a53a905eb9de32d3bb12e318"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#aee2f0f80a53a905eb9de32d3bb12e318">DPhysics::SPhysics::gravityTimer</a></div><div class="ttdeci">sf::Clock gravityTimer</div><div class="ttdoc">Time since last stand still. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00038">DPhysics.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 20:47:19 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 21 2014 01:30:15 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

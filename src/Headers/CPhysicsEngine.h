@@ -13,7 +13,7 @@
 
 #include "IUpdateable.h"
 #include "DPhysics.h"
-#include "CPowerUp_holder.h"
+#include "CPowerUp_Container.h"
 
 /**
  * Module of the game engine that is responsible for: resolving collisions and
@@ -23,7 +23,7 @@ class CPhysicsEngine : public IUpdateable
 {
 public:
 	CPhysicsEngine(CPlayer* pPlayer,
-	               CPowerUp_holder* pPowerUp_holder,
+	               CPowerUp_Container* pPowerUp_Container,
 	               CTile_Container* pTile_Container,
 	               sf::RenderWindow* pWindow);
 	~CPhysicsEngine();
@@ -43,7 +43,7 @@ private:
 
 	CPlayer* m_pPlayer;
 
-	CPowerUp_holder* m_pPowerUp_holder;
+	CPowerUp_Container* m_pPowerUp_Container;
 
 	sf::RenderWindow* m_pWindow;
 

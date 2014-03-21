@@ -3,6 +3,7 @@ var searchData=
   ['cgame',['CGame',['../classCGame.html',1,'']]],
   ['cphysicsengine',['CPhysicsEngine',['../classCPhysicsEngine.html',1,'']]],
   ['cplayer',['CPlayer',['../classCPlayer.html',1,'']]],
+  ['cpowerup_5fcontainer',['CPowerUp_Container',['../classCPowerUp__Container.html',1,'']]],
   ['cpowerup_5fholder',['CPowerUp_holder',['../classCPowerUp__holder.html',1,'']]],
   ['crenderengine',['CRenderEngine',['../classCRenderEngine.html',1,'']]],
   ['csprite',['CSprite',['../classCSprite.html',1,'']]],

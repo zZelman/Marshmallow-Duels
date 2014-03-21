@@ -12,16 +12,18 @@ A common interface from pulling relevant collision data from objects.
 
 
 
-Inheritance diagram for I\-Get\-Collision\-Data\-:\nopagebreak
+Inheritance diagram for I\-Get\-Collision\-Data\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=194pt]{classIGetCollisionData__inherit__graph}
+\includegraphics[width=339pt]{classIGetCollisionData__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for I\-Get\-Collision\-Data\-:\nopagebreak
+Collaboration diagram for I\-Get\-Collision\-Data\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,7 +35,7 @@ Collaboration diagram for I\-Get\-Collision\-Data\-:\nopagebreak
 \item 
 virtual \hyperlink{classIGetCollisionData_a15a428835a190d306862a213bfbb063b}{$\sim$\-I\-Get\-Collision\-Data} ()
 \item 
-virtual void \hyperlink{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}{get\-Collisiondata} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)=0
+virtual void \hyperlink{classIGetCollisionData_ac0911a0286380c3959597cd5e0cb488e}{get\-Collision\-Data} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)=0
 \begin{DoxyCompactList}\small\item\em All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -59,20 +61,20 @@ Definition at line 10 of file I\-Get\-Collision\-Data.\-cpp.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}{\index{I\-Get\-Collision\-Data@{I\-Get\-Collision\-Data}!get\-Collisiondata@{get\-Collisiondata}}
-\index{get\-Collisiondata@{get\-Collisiondata}!IGetCollisionData@{I\-Get\-Collision\-Data}}
-\subsubsection[{get\-Collisiondata}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\-Get\-Collision\-Data\-::get\-Collisiondata (
+\hypertarget{classIGetCollisionData_ac0911a0286380c3959597cd5e0cb488e}{\index{I\-Get\-Collision\-Data@{I\-Get\-Collision\-Data}!get\-Collision\-Data@{get\-Collision\-Data}}
+\index{get\-Collision\-Data@{get\-Collision\-Data}!IGetCollisionData@{I\-Get\-Collision\-Data}}
+\subsubsection[{get\-Collision\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual void I\-Get\-Collision\-Data\-::get\-Collision\-Data (
 \begin{DoxyParamCaption}
 \item[{std\-::list$<$ {\bf A\-Renderable} $\ast$ $>$ $\ast$}]{p\-List}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIGetCollisionData_ad31b95dda265659e5090fc2c188b30b9}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIGetCollisionData_ac0911a0286380c3959597cd5e0cb488e}
 
 
 All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. 
 
 
 
-Implemented in \hyperlink{classCTile__Container_ae61b573ed7b47bea750040a26b492632}{C\-Tile\-\_\-\-Container}.
+Implemented in \hyperlink{classCTile__Container_a1412dde3860cb0f2431dda7d49aa17dc}{C\-Tile\-\_\-\-Container}, and \hyperlink{classCPowerUp__Container_a421cefb37e5913348f8bce1fbbef2126}{C\-Power\-Up\-\_\-\-Container}.
 
 
 

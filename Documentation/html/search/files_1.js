@@ -6,6 +6,8 @@ var searchData=
   ['cphysicsengine_2eh',['CPhysicsEngine.h',['../CPhysicsEngine_8h.html',1,'']]],
   ['cplayer_2ecpp',['CPlayer.cpp',['../CPlayer_8cpp.html',1,'']]],
   ['cplayer_2eh',['CPlayer.h',['../CPlayer_8h.html',1,'']]],
+  ['cpowerup_5fcontainer_2ecpp',['CPowerUp_Container.cpp',['../CPowerUp__Container_8cpp.html',1,'']]],
+  ['cpowerup_5fcontainer_2eh',['CPowerUp_Container.h',['../CPowerUp__Container_8h.html',1,'']]],
   ['cpowerup_5fholder_2ecpp',['CPowerUp_holder.cpp',['../CPowerUp__holder_8cpp.html',1,'']]],
   ['cpowerup_5fholder_2eh',['CPowerUp_holder.h',['../CPowerUp__holder_8h.html',1,'']]],
   ['crenderengine_2ecpp',['CRenderEngine.cpp',['../CRenderEngine_8cpp.html',1,'']]],

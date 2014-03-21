@@ -72,7 +72,7 @@ void CTile_Container::getRenderData(std::list<ARenderable*>* pList)
 }
 
 
-void CTile_Container::getCollisiondata(std::list<ARenderable*>* pList)
+void CTile_Container::getCollisionData(std::list<ARenderable*>* pList)
 {
 	for (std::list<CTile*>::iterator itr = m_tiles.begin();
 	        itr != m_tiles.end();

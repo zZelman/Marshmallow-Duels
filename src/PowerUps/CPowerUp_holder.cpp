@@ -17,6 +17,13 @@ CPowerUp_holder::~CPowerUp_holder()
 
 void CPowerUp_holder::update()
 {
+	if (m_isFirstUpdate)
+	{
+		m_sPhysics.gravityTimer.restart();
+
+		m_isFirstUpdate = false;
+		return;
+	}
 }
 
 

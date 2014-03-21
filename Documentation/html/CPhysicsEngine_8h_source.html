@@ -102,13 +102,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IUpdateable_8h.html">IUpdateable.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DPhysics_8h.html">DPhysics.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CPowerUp__holder_8h.html">CPowerUp_holder.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CPowerUp__Container_8h.html">CPowerUp_Container.h</a>&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCPhysicsEngine.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCPhysicsEngine.html">CPhysicsEngine</a> : <span class="keyword">public</span> <a class="code" href="classIUpdateable.html">IUpdateable</a></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classCPhysicsEngine.html#ace75d050c06185304fde6321bac6245f">CPhysicsEngine</a>(<a class="code" href="classCPlayer.html">CPlayer</a>* pPlayer,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                   <a class="code" href="classCPowerUp__holder.html">CPowerUp_holder</a>* pPowerUp_holder,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classCPhysicsEngine.html#ac01cb1dd2e766985fc898487b1fc0357">CPhysicsEngine</a>(<a class="code" href="classCPlayer.html">CPlayer</a>* pPlayer,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                   <a class="code" href="classCPowerUp__Container.html">CPowerUp_Container</a>* pPowerUp_Container,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                   <a class="code" href="classCTile__Container.html">CTile_Container</a>* pTile_Container,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                   sf::RenderWindow* pWindow);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classCPhysicsEngine.html#a2e432f93b60e9e38a8882223ea3ee71b">~CPhysicsEngine</a>();</div>
@@ -122,7 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classCPlayer.html">CPlayer</a>* m_pPlayer;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classCPowerUp__holder.html">CPowerUp_holder</a>* m_pPowerUp_holder;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classCPowerUp__Container.html">CPowerUp_Container</a>* m_pPowerUp_Container;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    sf::RenderWindow* m_pWindow;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
@@ -141,25 +141,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CPHYSICSENGINE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="CPowerUp__holder_8h_html"><div class="ttname"><a href="CPowerUp__holder_8h.html">CPowerUp_holder.h</a></div></div>
 <div class="ttc" id="DPhysics_8h_html"><div class="ttname"><a href="DPhysics_8h.html">DPhysics.h</a></div></div>
 <div class="ttc" id="classCTile_html"><div class="ttname"><a href="classCTile.html">CTile</a></div><div class="ttdoc">Rectangle of rigid space that is a rendered platform or wall. </div><div class="ttdef"><b>Definition:</b> <a href="CTile_8h_source.html#l00019">CTile.h:19</a></div></div>
+<div class="ttc" id="classCPhysicsEngine_html_ac01cb1dd2e766985fc898487b1fc0357"><div class="ttname"><a href="classCPhysicsEngine.html#ac01cb1dd2e766985fc898487b1fc0357">CPhysicsEngine::CPhysicsEngine</a></div><div class="ttdeci">CPhysicsEngine(CPlayer *pPlayer, CPowerUp_Container *pPowerUp_Container, CTile_Container *pTile_Container, sf::RenderWindow *pWindow)</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00011">CPhysicsEngine.cpp:11</a></div></div>
 <div class="ttc" id="IUpdateable_8h_html"><div class="ttname"><a href="IUpdateable_8h.html">IUpdateable.h</a></div></div>
 <div class="ttc" id="classCPhysicsEngine_html_a2e432f93b60e9e38a8882223ea3ee71b"><div class="ttname"><a href="classCPhysicsEngine.html#a2e432f93b60e9e38a8882223ea3ee71b">CPhysicsEngine::~CPhysicsEngine</a></div><div class="ttdeci">~CPhysicsEngine()</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00027">CPhysicsEngine.cpp:27</a></div></div>
 <div class="ttc" id="classCPhysicsEngine_html_abc493897bbdb15e6787a25478730f1f5"><div class="ttname"><a href="classCPhysicsEngine.html#abc493897bbdb15e6787a25478730f1f5">CPhysicsEngine::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Only updates the velocities within the objects, and calls &amp;quot;stepNormally()&amp;quot; if it can step normally wi...</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00032">CPhysicsEngine.cpp:32</a></div></div>
+<div class="ttc" id="classCPowerUp__Container_html"><div class="ttname"><a href="classCPowerUp__Container.html">CPowerUp_Container</a></div><div class="ttdoc">Container for all Power Ups; Active, Holders, and Passive. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__Container_8h_source.html#l00014">CPowerUp_Container.h:14</a></div></div>
 <div class="ttc" id="CPlayer_8h_html"><div class="ttname"><a href="CPlayer_8h.html">CPlayer.h</a></div></div>
-<div class="ttc" id="classCPhysicsEngine_html_ace75d050c06185304fde6321bac6245f"><div class="ttname"><a href="classCPhysicsEngine.html#ace75d050c06185304fde6321bac6245f">CPhysicsEngine::CPhysicsEngine</a></div><div class="ttdeci">CPhysicsEngine(CPlayer *pPlayer, CPowerUp_holder *pPowerUp_holder, CTile_Container *pTile_Container, sf::RenderWindow *pWindow)</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00011">CPhysicsEngine.cpp:11</a></div></div>
 <div class="ttc" id="classCPhysicsEngine_html"><div class="ttname"><a href="classCPhysicsEngine.html">CPhysicsEngine</a></div><div class="ttdoc">Module of the game engine that is responsible for: resolving collisions and updating physics data wit...</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8h_source.html#l00022">CPhysicsEngine.h:22</a></div></div>
 <div class="ttc" id="classIUpdateable_html"><div class="ttname"><a href="classIUpdateable.html">IUpdateable</a></div><div class="ttdoc">An interface for providing a common method to call to update the state of an object. </div><div class="ttdef"><b>Definition:</b> <a href="IUpdateable_8h_source.html#l00015">IUpdateable.h:15</a></div></div>
 <div class="ttc" id="classCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Base class of each individual player. </div><div class="ttdef"><b>Definition:</b> <a href="CPlayer_8h_source.html#l00023">CPlayer.h:23</a></div></div>
 <div class="ttc" id="classDPhysics_html"><div class="ttname"><a href="classDPhysics.html">DPhysics</a></div><div class="ttdoc">Base class holder of pertinent physics information within a SPhysics. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00017">DPhysics.h:17</a></div></div>
+<div class="ttc" id="CPowerUp__Container_8h_html"><div class="ttname"><a href="CPowerUp__Container_8h.html">CPowerUp_Container.h</a></div></div>
 <div class="ttc" id="CTile__Container_8h_html"><div class="ttname"><a href="CTile__Container_8h.html">CTile_Container.h</a></div></div>
 <div class="ttc" id="classCTile__Container_html"><div class="ttname"><a href="classCTile__Container.html">CTile_Container</a></div><div class="ttdoc">TODO: This object needs to be re-writen to expand functionality. </div><div class="ttdef"><b>Definition:</b> <a href="CTile__Container_8h_source.html#l00030">CTile_Container.h:30</a></div></div>
 <div class="ttc" id="classCPowerUp__holder_html"><div class="ttname"><a href="classCPowerUp__holder.html">CPowerUp_holder</a></div><div class="ttdoc">A floating PowerUp, ones that the player does not have yet. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8h_source.html#l00017">CPowerUp_holder.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 20:47:19 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 21 2014 01:30:15 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

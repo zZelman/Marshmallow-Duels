@@ -1,15 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="190,125,287,151"/>
-<area shape="rect" id="node2" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="376,49,445,75"/>
-<area shape="rect" id="node3" href="$classCPowerUp__holder.html" title="A floating PowerUp, ones that the player does not have yet. " alt="" coords="347,125,475,151"/>
-<area shape="rect" id="node4" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="384,175,437,202"/>
-<area shape="rect" id="node5" href="$classAUserInput.html" title="Abstract class which decomposes the different types of user input. " alt="" coords="24,23,112,50"/>
-<area shape="rect" id="node6" href="$classCUI.html" title="&#39;Parses&#39; user events, as well as keeps Bookkeeping information on several user states. " alt="" coords="215,74,262,101"/>
-<area shape="rect" id="node7" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="199,23,278,50"/>
-<area shape="rect" id="node8" href="$classIGetCollisionData.html" title="A common interface from pulling relevant collision data from objects. " alt="" coords="5,263,131,290"/>
-<area shape="rect" id="node9" href="$classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="181,277,297,303"/>
-<area shape="rect" id="node10" href="$classIGetRenderData.html" title="A common interface for pulling relavent rendering information out of objects. " alt="" coords="9,314,127,341"/>
-<area shape="rect" id="node11" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="22,187,114,214"/>
-<area shape="rect" id="node12" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="202,175,275,202"/>
-<area shape="rect" id="node13" href="$classCPhysicsEngine.html" title="Module of the game engine that is responsible for: resolving collisions and updating physics data wit..." alt="" coords="179,226,298,253"/>
+<area shape="rect" id="node1" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="205,75,302,102"/>
+<area shape="rect" id="node2" href="$classCPlayer.html" title="Base class of each individual player. " alt="" coords="405,25,475,51"/>
+<area shape="rect" id="node3" href="$classCPowerUp__holder.html" title="A floating PowerUp, ones that the player does not have yet. " alt="" coords="376,75,504,102"/>
+<area shape="rect" id="node4" href="$classCTile.html" title="Rectangle of rigid space that is a rendered platform or wall. " alt="" coords="413,151,467,178"/>
+<area shape="rect" id="node5" href="$classAUserInput.html" title="Abstract class which decomposes the different types of user input. " alt="" coords="24,50,112,77"/>
+<area shape="rect" id="node6" href="$classCUI.html" title="&#39;Parses&#39; user events, as well as keeps Bookkeeping information on several user states. " alt="" coords="230,126,277,153"/>
+<area shape="rect" id="node7" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="214,25,293,51"/>
+<area shape="rect" id="node8" href="$classIGetCollisionData.html" title="A common interface from pulling relevant collision data from objects. " alt="" coords="5,278,131,305"/>
+<area shape="rect" id="node9" href="$classCPowerUp__Container.html" title="Container for all Power Ups; Active, Holders, and Passive. " alt="" coords="179,278,328,305"/>
+<area shape="rect" id="node10" href="$classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="195,329,311,355"/>
+<area shape="rect" id="node11" href="$classIGetRenderData.html" title="A common interface for pulling relavent rendering information out of objects. " alt="" coords="9,329,127,355"/>
+<area shape="rect" id="node12" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="22,227,114,254"/>
+<area shape="rect" id="node13" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="217,177,290,203"/>
+<area shape="rect" id="node14" href="$classCPhysicsEngine.html" title="Module of the game engine that is responsible for: resolving collisions and updating physics data wit..." alt="" coords="194,227,313,254"/>
 </map>

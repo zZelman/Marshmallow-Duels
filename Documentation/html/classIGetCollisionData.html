@@ -98,21 +98,23 @@ Inheritance diagram for IGetCollisionData:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIGetCollisionData__inherit__graph.png" border="0" usemap="#IGetCollisionData_inherit__map" alt="Inheritance graph"/></div>
 <map name="IGetCollisionData_inherit__map" id="IGetCollisionData_inherit__map">
-<area shape="rect" id="node2" href="classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="9,147,153,371"/></map>
+<area shape="rect" id="node2" href="classCPowerUp__Container.html" title="Container for all Power Ups; Active, Holders, and Passive. " alt="" coords="5,191,181,327"/><area shape="rect" id="node3" href="classCTile__Container.html" title="TODO: This object needs to be re&#45;writen to expand functionality. " alt="" coords="207,147,351,371"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for IGetCollisionData:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIGetCollisionData__coll__graph.png" border="0" usemap="#IGetCollisionData_coll__map" alt="Collaboration graph"/></div>
+<map name="IGetCollisionData_coll__map" id="IGetCollisionData_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a15a428835a190d306862a213bfbb063b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGetCollisionData.html#a15a428835a190d306862a213bfbb063b">~IGetCollisionData</a> ()</td></tr>
 <tr class="separator:a15a428835a190d306862a213bfbb063b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad31b95dda265659e5090fc2c188b30b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGetCollisionData.html#ad31b95dda265659e5090fc2c188b30b9">getCollisiondata</a> (std::list&lt; <a class="el" href="classARenderable.html">ARenderable</a> * &gt; *pList)=0</td></tr>
-<tr class="memdesc:ad31b95dda265659e5090fc2c188b30b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">All objects that implement this interface agree to allow their pointers to Derived Classes of ARender to be placed within the given std::list so that they may be used for quad-tree collision detection.  <a href="#ad31b95dda265659e5090fc2c188b30b9">More...</a><br/></td></tr>
-<tr class="separator:ad31b95dda265659e5090fc2c188b30b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0911a0286380c3959597cd5e0cb488e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIGetCollisionData.html#ac0911a0286380c3959597cd5e0cb488e">getCollisionData</a> (std::list&lt; <a class="el" href="classARenderable.html">ARenderable</a> * &gt; *pList)=0</td></tr>
+<tr class="memdesc:ac0911a0286380c3959597cd5e0cb488e"><td class="mdescLeft">&#160;</td><td class="mdescRight">All objects that implement this interface agree to allow their pointers to Derived Classes of ARender to be placed within the given std::list so that they may be used for quad-tree collision detection.  <a href="#ac0911a0286380c3959597cd5e0cb488e">More...</a><br/></td></tr>
+<tr class="separator:ac0911a0286380c3959597cd5e0cb488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A common interface from pulling relevant collision data from objects. </p>
@@ -145,7 +147,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad31b95dda265659e5090fc2c188b30b9"></a>
+<a class="anchor" id="ac0911a0286380c3959597cd5e0cb488e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -153,7 +155,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void IGetCollisionData::getCollisiondata </td>
+          <td class="memname">virtual void IGetCollisionData::getCollisionData </td>
           <td>(</td>
           <td class="paramtype">std::list&lt; <a class="el" href="classARenderable.html">ARenderable</a> * &gt; *&#160;</td>
           <td class="paramname"><em>pList</em></td><td>)</td>
@@ -169,7 +171,7 @@ Public Member Functions</h2></td></tr>
 
 <p>All objects that implement this interface agree to allow their pointers to Derived Classes of ARender to be placed within the given std::list so that they may be used for quad-tree collision detection. </p>
 
-<p>Implemented in <a class="el" href="classCTile__Container.html#ae61b573ed7b47bea750040a26b492632">CTile_Container</a>.</p>
+<p>Implemented in <a class="el" href="classCTile__Container.html#a1412dde3860cb0f2431dda7d49aa17dc">CTile_Container</a>, and <a class="el" href="classCPowerUp__Container.html#a421cefb37e5913348f8bce1fbbef2126">CPowerUp_Container</a>.</p>
 
 </div>
 </div>
@@ -180,7 +182,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 20:47:19 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 21 2014 01:30:16 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

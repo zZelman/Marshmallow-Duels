@@ -1,0 +1,139 @@
+\hypertarget{classCPowerUp__Container}{\section{C\-Power\-Up\-\_\-\-Container Class Reference}
+\label{classCPowerUp__Container}\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}}
+}
+
+
+Container for all Power Ups; Active, Holders, and Passive.  
+
+
+
+
+{\ttfamily \#include $<$C\-Power\-Up\-\_\-\-Container.\-h$>$}
+
+
+
+Inheritance diagram for C\-Power\-Up\-\_\-\-Container\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCPowerUp__Container__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\-Power\-Up\-\_\-\-Container\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCPowerUp__Container__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCPowerUp__Container_a8c128b6f1bccfd1e6f7eb028fe712d08}{C\-Power\-Up\-\_\-\-Container} ()
+\item 
+\hyperlink{classCPowerUp__Container_ab3589001ff7896264e9d346a9f2eec04}{$\sim$\-C\-Power\-Up\-\_\-\-Container} ()
+\item 
+void \hyperlink{classCPowerUp__Container_a88ec74dab0f7d8721ad7a0be644a5db7}{update} ()
+\item 
+void \hyperlink{classCPowerUp__Container_a5e224fbb40c3d6dbea785b47f00ae91e}{get\-Render\-Data} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)
+\begin{DoxyCompactList}\small\item\em Fills the std\-::list with objects that need to be rendered. \end{DoxyCompactList}\item 
+void \hyperlink{classCPowerUp__Container_a421cefb37e5913348f8bce1fbbef2126}{get\-Collision\-Data} (std\-::list$<$ \hyperlink{classARenderable}{A\-Renderable} $\ast$ $>$ $\ast$p\-List)
+\begin{DoxyCompactList}\small\item\em All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for all Power Ups; Active, Holders, and Passive. 
+
+Definition at line 14 of file C\-Power\-Up\-\_\-\-Container.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCPowerUp__Container_a8c128b6f1bccfd1e6f7eb028fe712d08}{\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}!C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}}
+\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}!CPowerUp_Container@{C\-Power\-Up\-\_\-\-Container}}
+\subsubsection[{C\-Power\-Up\-\_\-\-Container}]{\setlength{\rightskip}{0pt plus 5cm}C\-Power\-Up\-\_\-\-Container\-::\-C\-Power\-Up\-\_\-\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCPowerUp__Container_a8c128b6f1bccfd1e6f7eb028fe712d08}
+
+
+Definition at line 3 of file C\-Power\-Up\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCPowerUp__Container_ab3589001ff7896264e9d346a9f2eec04}{\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}!$\sim$\-C\-Power\-Up\-\_\-\-Container@{$\sim$\-C\-Power\-Up\-\_\-\-Container}}
+\index{$\sim$\-C\-Power\-Up\-\_\-\-Container@{$\sim$\-C\-Power\-Up\-\_\-\-Container}!CPowerUp_Container@{C\-Power\-Up\-\_\-\-Container}}
+\subsubsection[{$\sim$\-C\-Power\-Up\-\_\-\-Container}]{\setlength{\rightskip}{0pt plus 5cm}C\-Power\-Up\-\_\-\-Container\-::$\sim$\-C\-Power\-Up\-\_\-\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCPowerUp__Container_ab3589001ff7896264e9d346a9f2eec04}
+
+
+Definition at line 15 of file C\-Power\-Up\-\_\-\-Container.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCPowerUp__Container_a421cefb37e5913348f8bce1fbbef2126}{\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}!get\-Collision\-Data@{get\-Collision\-Data}}
+\index{get\-Collision\-Data@{get\-Collision\-Data}!CPowerUp_Container@{C\-Power\-Up\-\_\-\-Container}}
+\subsubsection[{get\-Collision\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Power\-Up\-\_\-\-Container\-::get\-Collision\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf A\-Renderable} $\ast$ $>$ $\ast$}]{p\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPowerUp__Container_a421cefb37e5913348f8bce1fbbef2126}
+
+
+All objects that implement this interface agree to allow their pointers to Derived Classes of A\-Render to be placed within the given std\-::list so that they may be used for quad-\/tree collision detection. 
+
+
+
+Implements \hyperlink{classIGetCollisionData_ac0911a0286380c3959597cd5e0cb488e}{I\-Get\-Collision\-Data}.
+
+
+
+Definition at line 44 of file C\-Power\-Up\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCPowerUp__Container_a5e224fbb40c3d6dbea785b47f00ae91e}{\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}!get\-Render\-Data@{get\-Render\-Data}}
+\index{get\-Render\-Data@{get\-Render\-Data}!CPowerUp_Container@{C\-Power\-Up\-\_\-\-Container}}
+\subsubsection[{get\-Render\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Power\-Up\-\_\-\-Container\-::get\-Render\-Data (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf A\-Renderable} $\ast$ $>$ $\ast$}]{p\-List}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPowerUp__Container_a5e224fbb40c3d6dbea785b47f00ae91e}
+
+
+Fills the std\-::list with objects that need to be rendered. 
+
+
+
+Implements \hyperlink{classIGetRenderData_ac98527f07b6d1b5030786b4848cca867}{I\-Get\-Render\-Data}.
+
+
+
+Definition at line 34 of file C\-Power\-Up\-\_\-\-Container.\-cpp.
+
+\hypertarget{classCPowerUp__Container_a88ec74dab0f7d8721ad7a0be644a5db7}{\index{C\-Power\-Up\-\_\-\-Container@{C\-Power\-Up\-\_\-\-Container}!update@{update}}
+\index{update@{update}!CPowerUp_Container@{C\-Power\-Up\-\_\-\-Container}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Power\-Up\-\_\-\-Container\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCPowerUp__Container_a88ec74dab0f7d8721ad7a0be644a5db7}
+
+
+Implements \hyperlink{classIUpdateable_a46d178a1ecdab33bcaad25d9b38582a5}{I\-Updateable}.
+
+
+
+Definition at line 24 of file C\-Power\-Up\-\_\-\-Container.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Headers/\hyperlink{CPowerUp__Container_8h}{C\-Power\-Up\-\_\-\-Container.\-h}\item 
+/home/z\-Zelman/\-Dropbox/\-Marshmallow-\/\-Duels/src/\-Power\-Ups/\hyperlink{CPowerUp__Container_8cpp}{C\-Power\-Up\-\_\-\-Container.\-cpp}\end{DoxyCompactItemize}

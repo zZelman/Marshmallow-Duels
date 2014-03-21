@@ -1,0 +1,5 @@
+<map id="CPowerUp_Container" name="CPowerUp_Container">
+<area shape="rect" id="node2" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="5,5,125,112"/>
+<area shape="rect" id="node3" href="$classIGetRenderData.html" title="A common interface for pulling relavent rendering information out of objects. " alt="" coords="150,13,295,105"/>
+<area shape="rect" id="node4" href="$classIGetCollisionData.html" title="A common interface from pulling relevant collision data from objects. " alt="" coords="319,13,472,105"/>
+</map>

@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CPhysicsEngine_8h.html">Headers/CPhysicsEngine.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CPowerUp__holder_8h.html">Headers/CPowerUp_holder.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CPowerUp__Container_8h.html">Headers/CPowerUp_Container.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCGame.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCGame.html">CGame</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
@@ -129,60 +129,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classCPhysicsEngine.html">CPhysicsEngine</a>* m_pPhysicsEngine;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classCRenderEngine.html">CRenderEngine</a>* m_pRenderEngine;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classCUI.html">CUI</a>* m_pUI;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classCPlayer.html">CPlayer</a>* m_pPlayer;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classCTexture.html">CTexture</a>* m_pTexture_player;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classCPowerUp__holder.html">CPowerUp_holder</a>* m_pPowerUp_holder;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classCTexture.html">CTexture</a>* m_pTexture_powerUpHolder;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classCTile__Container.html">CTile_Container</a>* m_pTile_Container;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> isRunning;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> isPaused;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> initWindow();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> gameLoop();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> input_gameSystem(sf::Event* pEvent);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> input_user(sf::Event* pEvent);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> update();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> render();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CGAME_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="CPowerUp__holder_8h_html"><div class="ttname"><a href="CPowerUp__holder_8h.html">CPowerUp_holder.h</a></div></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classCPowerUp__Container.html">CPowerUp_Container</a>* m_pPowerUp_Container;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classCUI.html">CUI</a>* m_pUI;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classCPlayer.html">CPlayer</a>* m_pPlayer;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classCTexture.html">CTexture</a>* m_pTexture_player;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classCTile__Container.html">CTile_Container</a>* m_pTile_Container;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> isRunning;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> isPaused;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> initWindow();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> gameLoop();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> input_gameSystem(sf::Event* pEvent);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> input_user(sf::Event* pEvent);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> update();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> render();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CGAME_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="classCGame_html"><div class="ttname"><a href="classCGame.html">CGame</a></div><div class="ttdoc">Host of game-loop and program flow therein, also handles SFML &amp;quot;system&amp;quot; events. </div><div class="ttdef"><b>Definition:</b> <a href="CGame_8h_source.html#l00027">CGame.h:27</a></div></div>
 <div class="ttc" id="classCGame_html_aa0b28c798a6198998d018047e96f188e"><div class="ttname"><a href="classCGame.html#aa0b28c798a6198998d018047e96f188e">CGame::CGame</a></div><div class="ttdeci">CGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00006">CGame.cpp:6</a></div></div>
 <div class="ttc" id="CPhysicsEngine_8h_html"><div class="ttname"><a href="CPhysicsEngine_8h.html">CPhysicsEngine.h</a></div></div>
-<div class="ttc" id="classCGame_html_acbad86ee58748e2db0da540f4aa0640e"><div class="ttname"><a href="classCGame.html#acbad86ee58748e2db0da540f4aa0640e">CGame::stopGame</a></div><div class="ttdeci">void stopGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00100">CGame.cpp:100</a></div></div>
+<div class="ttc" id="classCGame_html_acbad86ee58748e2db0da540f4aa0640e"><div class="ttname"><a href="classCGame.html#acbad86ee58748e2db0da540f4aa0640e">CGame::stopGame</a></div><div class="ttdeci">void stopGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00099">CGame.cpp:99</a></div></div>
 <div class="ttc" id="include__graphics_8h_html"><div class="ttname"><a href="include__graphics_8h.html">include_graphics.h</a></div></div>
 <div class="ttc" id="CUI_8h_html"><div class="ttname"><a href="CUI_8h.html">CUI.h</a></div></div>
-<div class="ttc" id="classCGame_html_aa94f04e2c012603f10430a4d4db3ce27"><div class="ttname"><a href="classCGame.html#aa94f04e2c012603f10430a4d4db3ce27">CGame::startGame</a></div><div class="ttdeci">void startGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00094">CGame.cpp:94</a></div></div>
-<div class="ttc" id="classCGame_html_a4db10c09035dc16b32d6c1ef4cca2143"><div class="ttname"><a href="classCGame.html#a4db10c09035dc16b32d6c1ef4cca2143">CGame::~CGame</a></div><div class="ttdeci">~CGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00053">CGame.cpp:53</a></div></div>
+<div class="ttc" id="classCGame_html_aa94f04e2c012603f10430a4d4db3ce27"><div class="ttname"><a href="classCGame.html#aa94f04e2c012603f10430a4d4db3ce27">CGame::startGame</a></div><div class="ttdeci">void startGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00093">CGame.cpp:93</a></div></div>
+<div class="ttc" id="classCGame_html_a4db10c09035dc16b32d6c1ef4cca2143"><div class="ttname"><a href="classCGame.html#a4db10c09035dc16b32d6c1ef4cca2143">CGame::~CGame</a></div><div class="ttdeci">~CGame()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00046">CGame.cpp:46</a></div></div>
+<div class="ttc" id="classCPowerUp__Container_html"><div class="ttname"><a href="classCPowerUp__Container.html">CPowerUp_Container</a></div><div class="ttdoc">Container for all Power Ups; Active, Holders, and Passive. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__Container_8h_source.html#l00014">CPowerUp_Container.h:14</a></div></div>
 <div class="ttc" id="classCUI_html"><div class="ttname"><a href="classCUI.html">CUI</a></div><div class="ttdoc">&amp;#39;Parses&amp;#39; user events, as well as keeps Bookkeeping information on several user states. </div><div class="ttdef"><b>Definition:</b> <a href="CUI_8h_source.html#l00023">CUI.h:23</a></div></div>
 <div class="ttc" id="classCRenderEngine_html"><div class="ttname"><a href="classCRenderEngine.html">CRenderEngine</a></div><div class="ttdoc">Module of the game engine that is responsible for rendering all ARenderable game objects in an ordere...</div><div class="ttdef"><b>Definition:</b> <a href="CRenderEngine_8h_source.html#l00026">CRenderEngine.h:26</a></div></div>
 <div class="ttc" id="CRenderEngine_8h_html"><div class="ttname"><a href="CRenderEngine_8h.html">CRenderEngine.h</a></div></div>
-<div class="ttc" id="classCGame_html_a9b2f241693b1f024c957f92069fe6ed7"><div class="ttname"><a href="classCGame.html#a9b2f241693b1f024c957f92069fe6ed7">CGame::getIsPaused</a></div><div class="ttdeci">bool getIsPaused()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00088">CGame.cpp:88</a></div></div>
+<div class="ttc" id="classCGame_html_a9b2f241693b1f024c957f92069fe6ed7"><div class="ttname"><a href="classCGame.html#a9b2f241693b1f024c957f92069fe6ed7">CGame::getIsPaused</a></div><div class="ttdeci">bool getIsPaused()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00087">CGame.cpp:87</a></div></div>
 <div class="ttc" id="classCTexture_html"><div class="ttname"><a href="classCTexture.html">CTexture</a></div><div class="ttdoc">Wrapper class for SFML 2.1 Texture. </div><div class="ttdef"><b>Definition:</b> <a href="CTexture_8h_source.html#l00016">CTexture.h:16</a></div></div>
 <div class="ttc" id="include__sfml_8h_html"><div class="ttname"><a href="include__sfml_8h.html">include_sfml.h</a></div></div>
 <div class="ttc" id="classCPhysicsEngine_html"><div class="ttname"><a href="classCPhysicsEngine.html">CPhysicsEngine</a></div><div class="ttdoc">Module of the game engine that is responsible for: resolving collisions and updating physics data wit...</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8h_source.html#l00022">CPhysicsEngine.h:22</a></div></div>
 <div class="ttc" id="classCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Base class of each individual player. </div><div class="ttdef"><b>Definition:</b> <a href="CPlayer_8h_source.html#l00023">CPlayer.h:23</a></div></div>
-<div class="ttc" id="classCGame_html_ae45938d7b77b13d2e80e4f9b3a17a44a"><div class="ttname"><a href="classCGame.html#ae45938d7b77b13d2e80e4f9b3a17a44a">CGame::getIsRunning</a></div><div class="ttdeci">bool getIsRunning()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00082">CGame.cpp:82</a></div></div>
+<div class="ttc" id="classCGame_html_ae45938d7b77b13d2e80e4f9b3a17a44a"><div class="ttname"><a href="classCGame.html#ae45938d7b77b13d2e80e4f9b3a17a44a">CGame::getIsRunning</a></div><div class="ttdeci">bool getIsRunning()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00081">CGame.cpp:81</a></div></div>
+<div class="ttc" id="CPowerUp__Container_8h_html"><div class="ttname"><a href="CPowerUp__Container_8h.html">CPowerUp_Container.h</a></div></div>
 <div class="ttc" id="CTile__Container_8h_html"><div class="ttname"><a href="CTile__Container_8h.html">CTile_Container.h</a></div></div>
 <div class="ttc" id="classCTile__Container_html"><div class="ttname"><a href="classCTile__Container.html">CTile_Container</a></div><div class="ttdoc">TODO: This object needs to be re-writen to expand functionality. </div><div class="ttdef"><b>Definition:</b> <a href="CTile__Container_8h_source.html#l00030">CTile_Container.h:30</a></div></div>
-<div class="ttc" id="classCPowerUp__holder_html"><div class="ttname"><a href="classCPowerUp__holder.html">CPowerUp_holder</a></div><div class="ttdoc">A floating PowerUp, ones that the player does not have yet. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8h_source.html#l00017">CPowerUp_holder.h:17</a></div></div>
-<div class="ttc" id="classCGame_html_a9ed0bb7ef800bc7e568cf8858c3b96ec"><div class="ttname"><a href="classCGame.html#a9ed0bb7ef800bc7e568cf8858c3b96ec">CGame::getGameWindow</a></div><div class="ttdeci">sf::RenderWindow * getGameWindow()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00076">CGame.cpp:76</a></div></div>
+<div class="ttc" id="classCGame_html_a9ed0bb7ef800bc7e568cf8858c3b96ec"><div class="ttname"><a href="classCGame.html#a9ed0bb7ef800bc7e568cf8858c3b96ec">CGame::getGameWindow</a></div><div class="ttdeci">sf::RenderWindow * getGameWindow()</div><div class="ttdef"><b>Definition:</b> <a href="CGame_8cpp_source.html#l00075">CGame.cpp:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 20:47:19 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 21 2014 01:30:15 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

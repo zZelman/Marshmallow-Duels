@@ -12,7 +12,7 @@
 #include "ARenderable.h"
 #include "CTile_Container.h"
 #include "CPlayer.h"
-#include "CPowerUp_holder.h"
+#include "CPowerUp_Container.h"
 
 #include <list>
 
@@ -29,7 +29,7 @@ public:
 	CRenderEngine(sf::RenderWindow* pWindow,
 	              CTile_Container* pTile_Container,
 	              CPlayer* pPlayer,
-	              CPowerUp_holder* pPowerUp_holder);
+	              CPowerUp_Container* pPowerUp_Container);
 	~CRenderEngine();
 
 	/**
@@ -74,8 +74,8 @@ private:
 	 */
 	std::list<ARenderable*> m_tiles;
 
-	CPowerUp_holder* m_pPowerUp_holder;
-	std::list<ARenderable*> m_powerUpHolders;
+	CPowerUp_Container* m_pPowerUp_Container;
+	std::list<ARenderable*> m_powerUps;
 
 	/**
 	 * Current sprite being rendered.

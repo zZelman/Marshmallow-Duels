@@ -38,7 +38,7 @@ public:
 
 	void update();
 
-	void getCollisiondata(std::list<ARenderable*>* pList);
+	void getCollisionData(std::list<ARenderable*>* pList);
 	void getRenderData(std::list<ARenderable*>* pList);
 
 	// * manipulates the screen values given into (x, y) grid coords

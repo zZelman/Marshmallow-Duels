@@ -98,15 +98,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Headers/include_sfml.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classCRenderEngine.html#acae965ee0ef2ad899562a4b27b33675b">   12</a></span>&#160;<a class="code" href="classCRenderEngine.html#acae965ee0ef2ad899562a4b27b33675b">CRenderEngine::CRenderEngine</a>(sf::RenderWindow* pWindow,</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classCRenderEngine.html#a31d5b902cd64ab8be690e655b5c953d2">   12</a></span>&#160;<a class="code" href="classCRenderEngine.html#a31d5b902cd64ab8be690e655b5c953d2">CRenderEngine::CRenderEngine</a>(sf::RenderWindow* pWindow,</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                             <a class="code" href="classCTile__Container.html">CTile_Container</a>* pTile_Container,</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                             <a class="code" href="classCPlayer.html">CPlayer</a>* pPlayer,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                             <a class="code" href="classCPowerUp__holder.html">CPowerUp_holder</a>* pPowerUp_holder)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                             <a class="code" href="classCPowerUp__Container.html">CPowerUp_Container</a>* pPowerUp_Container)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    m_pWindow           = pWindow;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    m_pTile_Container   = pTile_Container;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    m_pPlayer           = pPlayer;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    m_pPowerUp_holder   = pPowerUp_holder;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    m_pPowerUp_Container    = pPowerUp_Container;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    m_pSprite = NULL;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//      can be seen by calling canBeSeen(...);</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    render_obj(&amp;m_tiles);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    render_obj(&amp;m_players);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    render_obj(&amp;m_powerUpHolders);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    render_obj(&amp;m_powerUps);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    render_UI();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    render_HUD();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    render_menu();</div>
@@ -145,8 +145,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_players.clear();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_players.push_back(m_pPlayer);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_powerUpHolders.clear();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m_powerUpHolders.push_back(m_pPowerUp_holder);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_powerUps.clear();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    m_pPowerUp_Container-&gt;<a class="code" href="classCPowerUp__Container.html#a5e224fbb40c3d6dbea785b47f00ae91e">getRenderData</a>(&amp;m_powerUps);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    m_tiles.clear();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    m_pTile_Container-&gt;<a class="code" href="classCTile__Container.html#a48c74611efadee522595362a79620bff">getRenderData</a>(&amp;m_tiles);</div>
@@ -207,19 +207,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> CRenderEngine::render_menu()</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="ttc" id="classCRenderEngine_html_acae965ee0ef2ad899562a4b27b33675b"><div class="ttname"><a href="classCRenderEngine.html#acae965ee0ef2ad899562a4b27b33675b">CRenderEngine::CRenderEngine</a></div><div class="ttdeci">CRenderEngine(sf::RenderWindow *pWindow, CTile_Container *pTile_Container, CPlayer *pPlayer, CPowerUp_holder *pPowerUp_holder)</div><div class="ttdef"><b>Definition:</b> <a href="CRenderEngine_8cpp_source.html#l00012">CRenderEngine.cpp:12</a></div></div>
+<div class="ttc" id="classCPowerUp__Container_html_a5e224fbb40c3d6dbea785b47f00ae91e"><div class="ttname"><a href="classCPowerUp__Container.html#a5e224fbb40c3d6dbea785b47f00ae91e">CPowerUp_Container::getRenderData</a></div><div class="ttdeci">void getRenderData(std::list&lt; ARenderable * &gt; *pList)</div><div class="ttdoc">Fills the std::list with objects that need to be rendered. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__Container_8cpp_source.html#l00034">CPowerUp_Container.cpp:34</a></div></div>
+<div class="ttc" id="classCRenderEngine_html_a31d5b902cd64ab8be690e655b5c953d2"><div class="ttname"><a href="classCRenderEngine.html#a31d5b902cd64ab8be690e655b5c953d2">CRenderEngine::CRenderEngine</a></div><div class="ttdeci">CRenderEngine(sf::RenderWindow *pWindow, CTile_Container *pTile_Container, CPlayer *pPlayer, CPowerUp_Container *pPowerUp_Container)</div><div class="ttdef"><b>Definition:</b> <a href="CRenderEngine_8cpp_source.html#l00012">CRenderEngine.cpp:12</a></div></div>
 <div class="ttc" id="classARenderable_html"><div class="ttname"><a href="classARenderable.html">ARenderable</a></div><div class="ttdoc">An abstract base class for all things that can be rendered. </div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8h_source.html#l00022">ARenderable.h:22</a></div></div>
 <div class="ttc" id="classCRenderEngine_html_aa30932df40eda7760a6357308eb7edac"><div class="ttname"><a href="classCRenderEngine.html#aa30932df40eda7760a6357308eb7edac">CRenderEngine::~CRenderEngine</a></div><div class="ttdeci">~CRenderEngine()</div><div class="ttdef"><b>Definition:</b> <a href="CRenderEngine_8cpp_source.html#l00030">CRenderEngine.cpp:30</a></div></div>
+<div class="ttc" id="classCPowerUp__Container_html"><div class="ttname"><a href="classCPowerUp__Container.html">CPowerUp_Container</a></div><div class="ttdoc">Container for all Power Ups; Active, Holders, and Passive. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__Container_8h_source.html#l00014">CPowerUp_Container.h:14</a></div></div>
 <div class="ttc" id="classARenderable_html_a77d3d8b9f8d7f0e8b860abba2f6c53c9"><div class="ttname"><a href="classARenderable.html#a77d3d8b9f8d7f0e8b860abba2f6c53c9">ARenderable::getGlobalBounds</a></div><div class="ttdeci">sf::FloatRect getGlobalBounds()</div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8cpp_source.html#l00043">ARenderable.cpp:43</a></div></div>
 <div class="ttc" id="classCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Base class of each individual player. </div><div class="ttdef"><b>Definition:</b> <a href="CPlayer_8h_source.html#l00023">CPlayer.h:23</a></div></div>
 <div class="ttc" id="classCTile__Container_html_a48c74611efadee522595362a79620bff"><div class="ttname"><a href="classCTile__Container.html#a48c74611efadee522595362a79620bff">CTile_Container::getRenderData</a></div><div class="ttdeci">void getRenderData(std::list&lt; ARenderable * &gt; *pList)</div><div class="ttdoc">Fills the std::list with objects that need to be rendered. </div><div class="ttdef"><b>Definition:</b> <a href="CTile__Container_8cpp_source.html#l00064">CTile_Container.cpp:64</a></div></div>
 <div class="ttc" id="classCRenderEngine_html_a38c058de2a8b54f208decdaa7b799ada"><div class="ttname"><a href="classCRenderEngine.html#a38c058de2a8b54f208decdaa7b799ada">CRenderEngine::render</a></div><div class="ttdeci">void render()</div><div class="ttdoc">Renders each ARenderable game object, and renders in reverse order (bottom first) because of super-po...</div><div class="ttdef"><b>Definition:</b> <a href="CRenderEngine_8cpp_source.html#l00035">CRenderEngine.cpp:35</a></div></div>
 <div class="ttc" id="classCTile__Container_html"><div class="ttname"><a href="classCTile__Container.html">CTile_Container</a></div><div class="ttdoc">TODO: This object needs to be re-writen to expand functionality. </div><div class="ttdef"><b>Definition:</b> <a href="CTile__Container_8h_source.html#l00030">CTile_Container.h:30</a></div></div>
-<div class="ttc" id="classCPowerUp__holder_html"><div class="ttname"><a href="classCPowerUp__holder.html">CPowerUp_holder</a></div><div class="ttdoc">A floating PowerUp, ones that the player does not have yet. </div><div class="ttdef"><b>Definition:</b> <a href="CPowerUp__holder_8h_source.html#l00017">CPowerUp_holder.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 20:47:19 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 21 2014 01:30:15 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

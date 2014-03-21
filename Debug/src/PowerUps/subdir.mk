@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/PowerUps/CPowerUp_Container.cpp \
 ../src/PowerUps/CPowerUp_holder.cpp 
 
 OBJS += \
+./src/PowerUps/CPowerUp_Container.o \
 ./src/PowerUps/CPowerUp_holder.o 
 
 CPP_DEPS += \
+./src/PowerUps/CPowerUp_Container.d \
 ./src/PowerUps/CPowerUp_holder.d 
 
 
