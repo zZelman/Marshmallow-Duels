@@ -257,56 +257,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        velX = 0;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        isCollision = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        pPlayer-&gt;<a class="code" href="classARenderable.html#a1d0db7e6ba2e9bf6d8accb4164531b46">setPosition</a>(newX, newY);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        pPlayer-&gt;<a class="code" href="classARenderable.html#a1d0db7e6ba2e9bf6d8accb4164531b46">setPosition</a>(newX, newY);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        isCollision = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">// DEBUG printing</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">//      cout &lt;&lt; &quot;tile cords: (&quot; &lt;&lt; tileRect.left &lt;&lt; &quot;, &quot; &lt;&lt; tileRect.top &lt;&lt; &quot;)&quot; &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">//      cout &lt;&lt; &quot;new player: (&quot; &lt;&lt; newX &lt;&lt; &quot;, &quot; &lt;&lt; newY &lt;&lt; &quot;)&quot; &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">//      cout &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">return</span> isCollision;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        physicsData.<a class="code" href="structDPhysics_1_1SPhysics.html#a941f0fd89d53e7e7593217b81d04bf4b">isCollision_h</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="comment">// DEBUG printing</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">//      cout &lt;&lt; &quot;tile cords: (&quot; &lt;&lt; tileRect.left &lt;&lt; &quot;, &quot; &lt;&lt; tileRect.top &lt;&lt; &quot;)&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">//      cout &lt;&lt; &quot;new player: (&quot; &lt;&lt; newX &lt;&lt; &quot;, &quot; &lt;&lt; newY &lt;&lt; &quot;)&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">//      cout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        physicsData.<a class="code" href="structDPhysics_1_1SPhysics.html#a941f0fd89d53e7e7593217b81d04bf4b">isCollision_h</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keywordtype">void</span> CPhysicsEngine::applyPhysics(<a class="code" href="classDPhysics.html">DPhysics</a>* pObject)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;{</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    sf::Time timer = pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#aee2f0f80a53a905eb9de32d3bb12e318">gravityTimer</a>.getElapsedTime();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> isCollision;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">double</span> elapsed = timer.asMilliseconds();</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// make game look nice</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// remember &#39;elapsed&#39; is in MS, this reduces that massive x var</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">double</span> reductionFactor = 0.005;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">bool</span> isJumping = pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a6fc3e1a46d84fb6dec9f198bb6513856">isJumping</a>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">bool</span> isFalling = pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a39163a65d84fc6d7fd0be57560cffe12">isFalling</a>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span> (isJumping)</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">velosity_y</a> = 3.0f * (reductionFactor * elapsed) - 5;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">void</span> CPhysicsEngine::applyPhysics(<a class="code" href="classDPhysics.html">DPhysics</a>* pObject)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;{</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    sf::Time timer = pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#aee2f0f80a53a905eb9de32d3bb12e318">gravityTimer</a>.getElapsedTime();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">double</span> elapsed = timer.asMilliseconds();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// make game look nice</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// remember &#39;elapsed&#39; is in MS, this reduces that massive x var</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">double</span> reductionFactor = 0.005;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">bool</span> isJumping = pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a6fc3e1a46d84fb6dec9f198bb6513856">isJumping</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">bool</span> isFalling = pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a39163a65d84fc6d7fd0be57560cffe12">isFalling</a>;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (isFalling)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (isJumping)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">velosity_y</a> = 3.0f * (reductionFactor * elapsed);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">velosity_y</a> = 3.0f * (reductionFactor * elapsed) - 5;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">void</span> CPhysicsEngine::applyStepNormally(std::list&lt;DPhysics*&gt;* pList)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">for</span> (std::list&lt;DPhysics*&gt;::iterator itr = pList-&gt;begin();</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            itr != pList-&gt;end();</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            ++itr)</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        (*itr)-&gt;stepNormally();</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> (isFalling)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        pObject-&gt;<a class="code" href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">m_sPhysics</a>.<a class="code" href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">velosity_y</a> = 3.0f * (reductionFactor * elapsed);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keywordtype">void</span> CPhysicsEngine::applyStepNormally(std::list&lt;DPhysics*&gt;* pList)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">for</span> (std::list&lt;DPhysics*&gt;::iterator itr = pList-&gt;begin();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            itr != pList-&gt;end();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            ++itr)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        (*itr)-&gt;stepNormally();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
 <div class="ttc" id="classDPhysics_html_aca2940879481f0e2b892c82c5fc0da5a"><div class="ttname"><a href="classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a">DPhysics::m_sPhysics</a></div><div class="ttdeci">struct DPhysics::SPhysics m_sPhysics</div></div>
 <div class="ttc" id="classCTile_html"><div class="ttname"><a href="classCTile.html">CTile</a></div><div class="ttdoc">Rectangle of rigid space that is a rendered platform or wall. </div><div class="ttdef"><b>Definition:</b> <a href="CTile_8h_source.html#l00019">CTile.h:19</a></div></div>
 <div class="ttc" id="classCPhysicsEngine_html_ab7a2fa6ebd7e1ad0da2ab36d92ae8608"><div class="ttname"><a href="classCPhysicsEngine.html#ab7a2fa6ebd7e1ad0da2ab36d92ae8608">CPhysicsEngine::CPhysicsEngine</a></div><div class="ttdeci">CPhysicsEngine(CPlayer *pPlayer, CTile_Container *pTile_Container)</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00011">CPhysicsEngine.cpp:11</a></div></div>
@@ -314,11 +319,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classCPhysicsEngine_html_a2e432f93b60e9e38a8882223ea3ee71b"><div class="ttname"><a href="classCPhysicsEngine.html#a2e432f93b60e9e38a8882223ea3ee71b">CPhysicsEngine::~CPhysicsEngine</a></div><div class="ttdeci">~CPhysicsEngine()</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00021">CPhysicsEngine.cpp:21</a></div></div>
 <div class="ttc" id="classCPhysicsEngine_html_abc493897bbdb15e6787a25478730f1f5"><div class="ttname"><a href="classCPhysicsEngine.html#abc493897bbdb15e6787a25478730f1f5">CPhysicsEngine::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Only updates the velocities within the objects, and calls &amp;quot;stepNormally()&amp;quot; if it can step normally wi...</div><div class="ttdef"><b>Definition:</b> <a href="CPhysicsEngine_8cpp_source.html#l00026">CPhysicsEngine.cpp:26</a></div></div>
 <div class="ttc" id="structDPhysics_1_1SPhysics_html_a39163a65d84fc6d7fd0be57560cffe12"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#a39163a65d84fc6d7fd0be57560cffe12">DPhysics::SPhysics::isFalling</a></div><div class="ttdeci">bool isFalling</div><div class="ttdoc">Object passively fell off of something. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00037">DPhysics.h:37</a></div></div>
-<div class="ttc" id="classARenderable_html_a1d0db7e6ba2e9bf6d8accb4164531b46"><div class="ttname"><a href="classARenderable.html#a1d0db7e6ba2e9bf6d8accb4164531b46">ARenderable::setPosition</a></div><div class="ttdeci">void setPosition(float x, float y)</div><div class="ttdoc">Forwards the position coords into the API sprite to re-set the position of the sprite in GLOBAL coord...</div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8cpp_source.html#l00061">ARenderable.cpp:61</a></div></div>
+<div class="ttc" id="classARenderable_html_a1d0db7e6ba2e9bf6d8accb4164531b46"><div class="ttname"><a href="classARenderable.html#a1d0db7e6ba2e9bf6d8accb4164531b46">ARenderable::setPosition</a></div><div class="ttdeci">void setPosition(float x, float y)</div><div class="ttdoc">Forwards the position coords into the API sprite to re-set the position of the sprite in GLOBAL coord...</div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8cpp_source.html#l00049">ARenderable.cpp:49</a></div></div>
 <div class="ttc" id="classCTile__Container_html_ae61b573ed7b47bea750040a26b492632"><div class="ttname"><a href="classCTile__Container.html#ae61b573ed7b47bea750040a26b492632">CTile_Container::getCollisiondata</a></div><div class="ttdeci">void getCollisiondata(std::list&lt; ARenderable * &gt; *pList)</div><div class="ttdoc">All objects that implement this interface agree to allow their pointers to Derived Classes of ARender...</div><div class="ttdef"><b>Definition:</b> <a href="CTile__Container_8cpp_source.html#l00075">CTile_Container.cpp:75</a></div></div>
-<div class="ttc" id="classARenderable_html_a77d3d8b9f8d7f0e8b860abba2f6c53c9"><div class="ttname"><a href="classARenderable.html#a77d3d8b9f8d7f0e8b860abba2f6c53c9">ARenderable::getGlobalBounds</a></div><div class="ttdeci">sf::FloatRect getGlobalBounds()</div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8cpp_source.html#l00044">ARenderable.cpp:44</a></div></div>
+<div class="ttc" id="classARenderable_html_a77d3d8b9f8d7f0e8b860abba2f6c53c9"><div class="ttname"><a href="classARenderable.html#a77d3d8b9f8d7f0e8b860abba2f6c53c9">ARenderable::getGlobalBounds</a></div><div class="ttdeci">sf::FloatRect getGlobalBounds()</div><div class="ttdef"><b>Definition:</b> <a href="ARenderable_8cpp_source.html#l00043">ARenderable.cpp:43</a></div></div>
 <div class="ttc" id="structDPhysics_1_1SPhysics_html_a2654e1fd65ea35fe4119c7866fd46274"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#a2654e1fd65ea35fe4119c7866fd46274">DPhysics::SPhysics::velosity_x</a></div><div class="ttdeci">int velosity_x</div><div class="ttdoc">Velocity on the x axis. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00034">DPhysics.h:34</a></div></div>
 <div class="ttc" id="classCPlayer_html"><div class="ttname"><a href="classCPlayer.html">CPlayer</a></div><div class="ttdoc">Base class of each individual player. </div><div class="ttdef"><b>Definition:</b> <a href="CPlayer_8h_source.html#l00023">CPlayer.h:23</a></div></div>
+<div class="ttc" id="structDPhysics_1_1SPhysics_html_a941f0fd89d53e7e7593217b81d04bf4b"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#a941f0fd89d53e7e7593217b81d04bf4b">DPhysics::SPhysics::isCollision_h</a></div><div class="ttdeci">bool isCollision_h</div><div class="ttdoc">flag for ongoing horizontal collision </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00040">DPhysics.h:40</a></div></div>
 <div class="ttc" id="structDPhysics_1_1SPhysics_html_a6fc3e1a46d84fb6dec9f198bb6513856"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#a6fc3e1a46d84fb6dec9f198bb6513856">DPhysics::SPhysics::isJumping</a></div><div class="ttdeci">bool isJumping</div><div class="ttdoc">Object actively choose to jump. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00038">DPhysics.h:38</a></div></div>
 <div class="ttc" id="structDPhysics_1_1SPhysics_html_a58c1f8fa61d0aeece450d7ab789c5013"><div class="ttname"><a href="structDPhysics_1_1SPhysics.html#a58c1f8fa61d0aeece450d7ab789c5013">DPhysics::SPhysics::velosity_y</a></div><div class="ttdeci">int velosity_y</div><div class="ttdoc">Velocity on the y axis. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00035">DPhysics.h:35</a></div></div>
 <div class="ttc" id="classDPhysics_html"><div class="ttname"><a href="classDPhysics.html">DPhysics</a></div><div class="ttdoc">Base class holder of pertinent physics information within a SPhysics. </div><div class="ttdef"><b>Definition:</b> <a href="DPhysics_8h_source.html#l00017">DPhysics.h:17</a></div></div>
@@ -327,7 +333,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 20 2014 16:46:13 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 20 2014 18:02:22 for Covert Collisions by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

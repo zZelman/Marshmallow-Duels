@@ -45,19 +45,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: Covert-Collisions
+all: Marshmallow-Duels
 
 # Tool invocations
-Covert-Collisions: $(OBJS) $(USER_OBJS)
+Marshmallow-Duels: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/zZelman/Dropbox/Covert-Collisions Host dir/Covert-Collisions/SFML-2.1/lib" -Xlinker -rpath "/home/zZelman/Dropbox/Covert-Collisions Host dir/Covert-Collisions/SFML-2.1/lib" -o "Covert-Collisions" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/zZelman/Dropbox/Marshmallow-Duels/SFML-2.1/lib" -Xlinker -rpath "/home/zZelman/Dropbox/Marshmallow-Duels/SFML-2.1/lib" -o "Marshmallow-Duels" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) Covert-Collisions
+	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) Marshmallow-Duels
 	-@echo ' '
 
 .PHONY: all clean dependents

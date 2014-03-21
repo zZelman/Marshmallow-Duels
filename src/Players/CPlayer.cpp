@@ -16,9 +16,6 @@ CPlayer::CPlayer(CTexture* pTexture, const sf::Vector2<int>& currSub)
 	setKeybinds();
 
 	m_sPhysics.isFalling = true;
-
-	hasView = true;
-	update_view();
 }
 
 
@@ -155,24 +152,7 @@ void CPlayer::update()
 		return;
 	}
 
-	update_view();
-
 	update_position();
-}
-
-
-void CPlayer::update_view()
-{
-	int viewDist = 15;
-	float sizeW = 32 * viewDist;
-	float sizeH = 32 * viewDist;
-
-	sf::FloatRect currRect = m_pSprite->getGlobalBounds();
-	float centerX = currRect.left + (currRect.width / 2);
-	float centerY = currRect.top + (currRect.height / 2);
-
-	m_view.setSize(sizeW, sizeH);
-	m_view.setCenter(centerX, centerY);
 }
 
 
@@ -220,10 +200,20 @@ void CPlayer::move_down()
 void CPlayer::move_left()
 {
 	m_pSprite->setSubImage(1, 2);
+
+	if (!m_sPhysics.isCollision_h)
+	{
+		m_sPhysics.velosity_x = -moveStep;
+	}
 }
 
 
 void CPlayer::move_right()
 {
 	m_pSprite->setSubImage(2, 2);
+
+	if (!m_sPhysics.isCollision_h)
+	{
+		m_sPhysics.velosity_x = moveStep;
+	}
 }

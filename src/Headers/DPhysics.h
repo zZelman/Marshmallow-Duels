@@ -37,6 +37,8 @@ public:
 		bool isFalling; /**< Object passively fell off of something */
 		bool isJumping; /**< Object actively choose to jump */
 
+		bool isCollision_h; /**< flag for ongoing horizontal collision */
+
 		/**
 		 * Sets all data values within m_sPhysics to NULL, and restarts gravityTimer.
 		 */

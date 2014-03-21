@@ -28,4 +28,6 @@ void DPhysics::SPhysics::nullAll()
 
 	isFalling = false;
 	isJumping = false;
+
+	isCollision_h = false;
 }

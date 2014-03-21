@@ -1,7 +1,7 @@
 <map id="CPlayer" name="CPlayer">
-<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,160,147,384"/>
-<area shape="rect" id="node3" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,219,300,325"/>
+<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,160,147,325"/>
+<area shape="rect" id="node3" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,189,300,296"/>
 <area shape="rect" id="node4" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="176,5,296,112"/>
-<area shape="rect" id="node5" href="$classAUserInput.html" title="Abstract class which decomposes the different types of user input. " alt="" coords="325,197,515,347"/>
-<area shape="rect" id="node6" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="539,219,657,325"/>
+<area shape="rect" id="node5" href="$classAUserInput.html" title="Abstract class which decomposes the different types of user input. " alt="" coords="325,167,515,318"/>
+<area shape="rect" id="node6" href="$classDPhysics.html" title="Base class holder of pertinent physics information within a SPhysics. " alt="" coords="539,189,657,296"/>
 </map>

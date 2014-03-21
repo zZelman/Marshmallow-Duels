@@ -1,5 +1,5 @@
 <map id="CTile" name="CTile">
-<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,160,147,384"/>
-<area shape="rect" id="node3" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,219,300,325"/>
+<area shape="rect" id="node2" href="$classARenderable.html" title="An abstract base class for all things that can be rendered. " alt="" coords="5,160,147,325"/>
+<area shape="rect" id="node3" href="$classAUpdate.html" title="Wrapper class to IUpdatable which only adds 1 variable. " alt="" coords="171,189,300,296"/>
 <area shape="rect" id="node4" href="$classIUpdateable.html" title="An interface for providing a common method to call to update the state of an object. " alt="" coords="176,5,296,112"/>
 </map>

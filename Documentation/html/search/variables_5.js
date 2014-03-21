@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['m_5fisfirstupdate',['m_isFirstUpdate',['../classAUpdate.html#adf0a017c2fd5abd12f64f7f0fd992e66',1,'AUpdate']]],
-  ['m_5fpsprite',['m_pSprite',['../classARenderable.html#a6030df923c81b400e94ff1f6a9df41f8',1,'ARenderable']]],
-  ['m_5fskeys',['m_sKeys',['../classAUserInput.html#a55b881326b920413bbcdf6e02c4fb021',1,'AUserInput']]],
-  ['m_5fsphysics',['m_sPhysics',['../classDPhysics.html#aca2940879481f0e2b892c82c5fc0da5a',1,'DPhysics']]],
-  ['m_5fview',['m_view',['../classARenderable.html#a9385344aed3d507e828e5b20c8846f4a',1,'ARenderable']]]
+  ['right',['right',['../structAUserInput_1_1SKeyStates.html#aa9551aac4a89e8c78e20d4a12a8afcee',1,'AUserInput::SKeyStates']]]
 ];

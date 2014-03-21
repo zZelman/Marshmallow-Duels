@@ -60,14 +60,6 @@ private:
 	void setKeybinds();
 
 	/**
-	 * Updates the view variable so that the render engine knows what to render
-	 * for this specific player.
-	 *
-	 * @see m_view
-	 */
-	void update_view();
-
-	/**
 	 * Wrapper function to the move_* functions.
 	 *
 	 * @see move_up()

@@ -168,15 +168,20 @@ bool CPhysicsEngine::player_tile(CPlayer* pPlayer, CTile* pTile)
 
 		velX = 0;
 
-		isCollision = true;
-
 		pPlayer->setPosition(newX, newY);
 
+		isCollision = true;
+
+		physicsData.isCollision_h = true;
 
 		// DEBUG printing
 //		cout << "tile cords: (" << tileRect.left << ", " << tileRect.top << ")" << endl;
 //		cout << "new player: (" << newX << ", " << newY << ")" << endl;
 //		cout << endl;
+	}
+	else
+	{
+		physicsData.isCollision_h = false;
 	}
 
 

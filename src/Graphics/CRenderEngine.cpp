@@ -35,8 +35,6 @@ void CRenderEngine::render()
 	// fill lists with respective data
 	getData();
 
-	m_pWindow->setView(m_pPlayer->getView());
-
 	// * render each type in a specific order
 	// * remember: law of super-position - things rendered
 	//		later will be on top

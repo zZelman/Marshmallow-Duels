@@ -5,7 +5,6 @@ var searchData=
   ['getglobalbounds',['getGlobalBounds',['../classARenderable.html#a77d3d8b9f8d7f0e8b860abba2f6c53c9',1,'ARenderable']]],
   ['getgridsize',['getGridSize',['../classCTile__Container.html#ae8a4d2b6e49fbec47d92cbb19bb9d3c7',1,'CTile_Container']]],
   ['getgridsubsize',['getGridSubSize',['../classCTile__Container.html#a876984278369d0cafc24890959128ed0',1,'CTile_Container']]],
-  ['gethasview',['getHasView',['../classARenderable.html#a67b01539f9b4b960f0ad3a9a8c0bd5c1',1,'ARenderable']]],
   ['getispaused',['getIsPaused',['../classCGame.html#a9b2f241693b1f024c957f92069fe6ed7',1,'CGame']]],
   ['getisrunning',['getIsRunning',['../classCGame.html#ae45938d7b77b13d2e80e4f9b3a17a44a',1,'CGame']]],
   ['getrenderdata',['getRenderData',['../classCTile__Container.html#a48c74611efadee522595362a79620bff',1,'CTile_Container::getRenderData()'],['../classIGetRenderData.html#ac98527f07b6d1b5030786b4848cca867',1,'IGetRenderData::getRenderData()']]],
@@ -13,6 +12,5 @@ var searchData=
   ['getsprite_5fapi',['getSprite_API',['../classARenderable.html#a87845b6d223c0f8907b465cdcf48311d',1,'ARenderable']]],
   ['getsubnum',['getSubNum',['../classCTexture.html#a52a074211eaa812a91200f73f8387aca',1,'CTexture']]],
   ['getsubsize',['getSubSize',['../classCTexture.html#a100f28379f113485d1e7574705ba977f',1,'CTexture']]],
-  ['getview',['getView',['../classARenderable.html#affb8b45bddba5083da20254577e32536',1,'ARenderable']]],
   ['gravitytimer',['gravityTimer',['../structDPhysics_1_1SPhysics.html#aee2f0f80a53a905eb9de32d3bb12e318',1,'DPhysics::SPhysics']]]
 ];

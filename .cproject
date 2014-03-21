@@ -79,8 +79,8 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.exe.debug.367669171" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.exe.debug">
 								<option id="gnu.both.asm.option.include.paths.504549471" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Covert-Collisions/Covert-Collisions/SFML-2.1/include}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Covert-Collisions/Covert-Collisions/rapidxml-1.13/}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/SFML-2.1/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rapidxml-1.13/}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1752596543" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
