@@ -1,0 +1,4 @@
+#+TITLE: Marshmallow-Duels
+#+AUTHOR: Kyle Avrett
+
+This is a recreation of an old DOS game that I spent many hours on called Marshmallow Duel. You can find more information [[http://mduel2k5.spadgos.com/][here]] and play it online [[http://playdosgamesonline.com/marshmallow-duel.html][here]] in its original form (not mine).
